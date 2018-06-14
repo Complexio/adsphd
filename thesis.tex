@@ -1,11 +1,11 @@
-\documentclass[showinstructions,faculty=firw,department=cws,phddegree=cws]{adsphd}
-%\documentclass[showinstructions,showlabels,coverfontpercent=100,faculty=firw,department=cws,phddegree=cws]{adsphd}
-%\documentclass[croppedpdf,showinstructions,faculty=firw,department=cws,phddegree=cws]{adsphd}
-%\documentclass[online,faculty=firw,department=cws,phddegree=cws]{adsphd}
-%\documentclass[print,bleed,cropmarks,faculty=firw,department=cws,phddegree=cws]{adsphd} % include bleed for the print service
-%\documentclass[print,faculty=firw,department=cws,phddegree=cws]{adsphd}
-%\documentclass[final,faculty=firw,department=cws,phddegree=cws]{adsphd}
-%\documentclass[showinstructions,faculty=firw,department=cws,phddegree=cws,epub]{adsphd}
+\documentclass[showinstructions,faculty=fw,department=aow,phddegree=glo]{adsphd} %add final to arguments to obtain final version
+%\documentclass[showinstructions,showlabels,coverfontpercent=100,faculty=fw,department=aow,phddegree=glo]{adsphd}
+%\documentclass[croppedpdf,showinstructions,faculty=fw,department=aow,phddegree=glo]{adsphd}
+%\documentclass[online,faculty=fw,department=aow,phddegree=glo]{adsphd}
+%\documentclass[print,bleed,cropmarks,faculty=fw,department=aow,phddegree=glo]{adsphd} % include bleed for the print service
+%\documentclass[print,faculty=fw,department=cws,phddegree=glo]{adsphd}
+%\documentclass[final,faculty=fw,department=cws,phddegree=glo]{adsphd}
+%\documentclass[showinstructions,faculty=fw,department=aow,phddegree=glo,epub]{adsphd}
 
 % !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 % !!                                                               !!
@@ -15,18 +15,19 @@
 % !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 %%% COVER: Settings %%%
-\title{The Title of Your PhD Dissertation}
-%\subtitle{Multiscale computing for Dummies}
+\title{Numerical Modelling of Sediment Generation}
+%\subtitle{}
 
-\author{Your}{Name}
+\author{Bram}{Paredis}
 
-\supervisor{Prof.~dr.~ir.~B.~Leader}{}
-\supervisor{Prof.~dr.~ir.~S.~Second-Leader}{}
+\supervisor{Prof.~dr.~G.J.~Weltje}{}
+%\supervisor{Prof.~dr.~ir.~S.~Second-Leader}{}
 \president{Prof.~dr.~ir.~The~Chairman}
-\jury{Prof.~dr.~ir.~The~One\\
-      Prof.~dr.~ir.~The~Other
+\jury{Prof.~dr.~J.~Elsen\\
+      Prof.~dr.~G.~Verstraeten
 }
-\externaljurymember{Prof.~dr.~External~Jurymember}{Far Away}
+\externaljurymember{Prof.~dr.~P.~Vermeesch}{University College London, UK}
+\externaljurymember{Prof.~dr.~W.A.~Heins}{Exxon, USA}
 
 % Your research group within the department
 % e.g. iMinds-DistriNet, Scientific Computing Group, ...
@@ -34,13 +35,13 @@
 \website{http://www.XXXXX.cs.kuleuven.be} % Leave empty to hide
 \email{first.last@cs.kuleuven.be} % Leave empty to hide
 
-\address{Celestijnenlaan 200A box 2402}
+\address{Celestijnenlaan 200E box 2410}
 % \addresscity{B-3001 Leuven} % This is the default value. Note
                               % that 'B-3001 Heverlee' is _incorrect_!!
                               % /[https://www.kuleuven.be/communicatie/marketing/intranet/huisstijl/taalgebruik.html]
 
-\date{January 2016}
-\copyyear{2016}
+\date{April 2020}
+\copyyear{2020}
 %\udc{XXX.XX}            % UDC, deposit number and ISBN are no longer necessary.
 %\depot{XXXX/XXXX/XX}    % Leave out the initial D/ (it is added
                          % automatically)
@@ -165,6 +166,8 @@
 \includebibliography
 % BibTex
 \bibliographystyle{acm}
+% To use other style, first delete all generated auxilary files in thesis folder
+% .bst files in C:\Users\u0108248\AppData\Local\Programs\MiKTeX2.9\bibtex\bst\bibtex
 \bibliography{allpapers}
 % BibLatex (comment lines above and comment out biblatex lines in preamble)
 %\printbibliography[title=\bibname]

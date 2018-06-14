@@ -561,13 +561,13 @@
 
 \newcommand{\labfont}{\fontfamily{phv}\selectfont} % fonts used in labels
 \usepackage{sectsty}
-\allsectionsfont{\sffamily}
+\allsectionsfont{\rmfamily} % fonts used for chapter headings; change to sffamily for sans serif font
 \DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
 
 % TABLE OF CONTENTS
 \usepackage[titles]{tocloft}
-\renewcommand{\cftchapfont}{\sffamily\bfseries\selectfont}
-\renewcommand{\cftchappagefont}{\sffamily\bfseries\selectfont}
+\renewcommand{\cftchapfont}{\rmfamily\bfseries\selectfont} % change to sffamily for sans serif font
+\renewcommand{\cftchappagefont}{\rmfamily\bfseries\selectfont} % change to sffamily for sans serif font
 
 % PAGE LAYOUT
 %\setlength{\textwidth}{12.5truecm}
