@@ -117,6 +117,7 @@
 \DeclareComplementaryOption{coverhidecommittee}{covershowcommittee}
 
 % Faculty
+\DeclareStringOption{doctoralschool}
 \DeclareStringOption{faculty}
 \DeclareStringOption{department}
 \DeclareStringOption{phddegree}
@@ -149,6 +150,7 @@
   \DisableKeyvalOption[action=warning,package=adsphd]{adsphd}{british}
   \DisableKeyvalOption[action=warning,package=adsphd]{adsphd}{showlabels}
   \DisableKeyvalOption[action=warning,package=adsphd]{adsphd}{coverfontpercent}
+  \DisableKeyvalOption[action=warning,package=adsphd]{adsphd}{doctoralschool}
   \DisableKeyvalOption[action=warning,package=adsphd]{adsphd}{faculty}
   \DisableKeyvalOption[action=warning,package=adsphd]{adsphd}{department}
   \DisableKeyvalOption[action=warning,package=adsphd]{adsphd}{phddegree}
@@ -406,6 +408,15 @@
 \def\email#1{\gdef\@email{#1}}
 \def\website#1{\gdef\@website{#1}}
 
+% doctoral school
+\ifx\@empty\adsphd@doctoralschool
+\gdef\adsphd@doctoralschool{ads}
+\fi
+
+\ifcsdef{adsphd@doctoralschool@\adsphd@doctoralschool}{}{%
+  \ClassError{adsphd}{Unsupported value '\adsphd@doctoralschool' for class option 'doctoralschool'}{\MessageBreak}}
+\gdef\@doctoralschool{\expandafter\csname adsphd@doctoralschool@\adsphd@doctoralschool \endcsname}
+
 % faculty
 \ifcsdef{adsphd@faculty@\adsphd@faculty}{}{%
   \ClassError{adsphd}{Unsupported value '\adsphd@faculty' for class option 'faculty'}{\MessageBreak}}
@@ -522,13 +533,14 @@
   \ifadsphd@epub\else
   \RequirePackage[center,pdftex]{crop}
   \fi
-  \RequirePackage[pdftex]{graphicx}
+  \RequirePackage{graphicx}
   \DeclareGraphicsExtensions{.pdf, .jpg, .tif, .png}
   % Use utf-8 encoding for foreign characters
     \ifPDFTeX
       \RequirePackage[utf8]{inputenc}
     \fi
 \else
+  \typeout{Using DVIPS}
   % Load the crop package
   \RequirePackage[center,dvips]{crop} % Option [a3] already passed
   \RequirePackage[dvips]{graphicx}
@@ -561,13 +573,13 @@
 
 \newcommand{\labfont}{\fontfamily{phv}\selectfont} % fonts used in labels
 \usepackage{sectsty}
-\allsectionsfont{\rmfamily} % fonts used for chapter headings; change to sffamily for sans serif font
+\allsectionsfont{\sffamily}
 \DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
 
 % TABLE OF CONTENTS
 \usepackage[titles]{tocloft}
-\renewcommand{\cftchapfont}{\rmfamily\bfseries\selectfont} % change to sffamily for sans serif font
-\renewcommand{\cftchappagefont}{\rmfamily\bfseries\selectfont} % change to sffamily for sans serif font
+\renewcommand{\cftchapfont}{\sffamily\bfseries\selectfont}
+\renewcommand{\cftchappagefont}{\sffamily\bfseries\selectfont}
 
 % PAGE LAYOUT
 %\setlength{\textwidth}{12.5truecm}
@@ -605,12 +617,12 @@
 \renewcommand{\chaptermark}[1]{\markboth{\uppercase{#1}}{\uppercase{#1}}}
 \renewcommand{\sectionmark}[1]{\markright{\uppercase{#1}}}
 \fancyhf{}
-\fancyhead[RO]{\scriptsize\sf\rightmark\ \hrulefill\ \thepage}
-\fancyhead[RE]{\scriptsize\sf\thepage\ \hrulefill\ \leftmark}
+\fancyhead[RO]{\scriptsize\sffamily\rightmark\ \hrulefill\ \thepage}
+\fancyhead[RE]{\scriptsize\sffamily\thepage\ \hrulefill\ \leftmark}
 \renewcommand{\headrulewidth}{0pt}
 \fancypagestyle{plain}{
 \fancyhf{}
-\fancyfoot[C]{\scriptsize\sf\thepage}
+\fancyfoot[C]{\scriptsize\sffamily\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 }
@@ -1231,13 +1243,18 @@ De appendices kunnen desgevallend worden gebundeld in een apart boekdeel.
   \end{textblock*}
   %
   % Create ADS+faculty box
-  \begin{textblock*}{75mm}(80mm+#1,20mm)
+  \begin{textblock*}{85mm}(70mm+#1,20mm)
   \textblockcolour{}
   \vspace{-\parskip}
   %\hspace*{2mm}
   \begin{flushright}
   \fontsize{12}{15}\selectfont
-  {\bf \textcolor{white} {\sffamily ARENBERG DOCTORAL SCHOOL}}\\[.2mm]
+  \def\tmphss{hss}%
+  \ifx\tmphss\adsphd@doctoralschool
+  \typeout{adsphd: Cover, smaller font size to fit doctoral school name}
+  \fontsize{10}{13}\selectfont%
+  \fi
+  {\bfseries \textcolor{white} {\sffamily \expandafter\MakeUppercase\expandafter{\@doctoralschool}}}\\[.2mm]
   {\sffamily \textcolor{white} {\@faculty}}
   \end{flushright}
   \end{textblock*}
@@ -1268,7 +1285,7 @@ De appendices kunnen desgevallend worden gebundeld in een apart boekdeel.
   \vspace{-\parskip}
   \hspace*{2mm}
   \parbox[c][20mm]{97.92mm}{
-  {\bf \small \textcolor{white} {\sffamily Arenberg Doctoral School of Science, Engineering \& Technology}}\\[.2mm]
+  {\bfseries \small \textcolor{white} {\sffamily Arenberg Doctoral School of Science, Engineering \& Technology}}\\[.2mm]
   {\sffamily\small \textcolor{white} {\@faculty}}\\[.2mm]
   {\sffamily\small \textcolor{white} {\@department}}
   }
@@ -1710,7 +1727,7 @@ without written permission from the publisher.
   \parbox[c][20mm]{151.2mm+\rbleed}{
   \flushright
   \vspace{-3mm}
-  {\bf \scriptsize \textcolor{white} {\sffamily{}Arenberg Doctoral School of Science, Engineering \& Technology} \ \ }\\[-1mm]
+  {\bfseries \scriptsize \textcolor{white} {\sffamily{}Arenberg Doctoral School of Science, Engineering \& Technology} \ \ }\\[-1mm]
   {\scriptsize \textcolor{white} {\sffamily\@faculty\ \ }}\\[-1.2mm]
   {\scriptsize \textcolor{white} {\sffamily\@department \ \ }}\\[-1.2mm]
   {\scriptsize \textcolor{white} {\sffamily\@researchgroup\ \ }}\\[-1.2mm]
@@ -1817,7 +1834,7 @@ without written permission from the publisher.
 \newcommand{\backcoverfooterXII}[1]{%
   % Bottom blue bar
   %\begin{textblock*}{\adsphdpaperwidth}(#1,222mm)
-  \begin{textblock*}{\adsphdpaperwidth+\lbleed+\rbleed}(#1-\lbleed,222mm)
+  \begin{textblock*}{\adsphdpaperwidth+\lbleed+\rbleed}(#1-\rbleed,222mm)
   %\begin{textblock*}{\adsphdpaperwidth}(0mm+#1,234mm)
   \textblockcolour{blueXIIdark}
   %\vspace{-\parskip}
