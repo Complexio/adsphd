@@ -116,9 +116,9 @@
 
 \frontmatter % to get \pagenumbering{roman}
 
-\includepreface{preface}
-\includeabstract{abstract}
-\includeabstractnl{abstractnl}
+\includepreface{00a-preface}
+\includeabstract{00b-abstract}
+\includeabstractnl{00c-abstractnl}
 
 % To create a list of abbreviations, there are 2 options
 % 1. manual creation of list of abbreviations and inclusion as a chapter
@@ -145,21 +145,38 @@
 % Show instructions on a separate page
 \instructionschapters\cleardoublepage
 
-\includechapter{introduction}
-\includechapter{manual} % Remove this chapter
+\includechapter{01-introduction}
+\includechapter{99-manual} % Remove this chapter
 
 % Insert here your own chapters
 % Chapters are expected to be in a tex-file with the given name dot
 % tex and in a directory with the given name in the chapters
 % directory.
+\part{Input}
+\includechapter{02-dataset}
+\includechapter{03-modal_mineralogy}
+\includechapter{04-interfaces}
+\includechapter{05-csd}
+\includechapter{06-parent_rock_characterization}
+\includechapter{07-input_GGD}
+\includechapter{08-mineral_properties}
+\includechapter{09-boundary_conditions}
+\part{Calculations/Implications/Algorithms}
+\includechapter{10-sedgen_architecture}
+\includechapter{11-mechanical_weathering}
+\includechapter{12-chemical_weathering}
+\part{Applications}
+\includechapter{13-calibration}
+\includechapter{14-applications}
+\includechapter{15-discussion}
 
-\includechapter{conclusion}
+\includechapter{16-conclusion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \appendix
 
-\includeappendix{myappendix}
+\includeappendix{99-myappendix}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \backmatter
@@ -174,9 +191,9 @@
 \printbibliography[title=\bibname]
 \instructionsbibliography
 
-\includecv{curriculum}
+\includecv{99-curriculum}
 
-\includepublications{publications}
+\includepublications{99-publications}
 
 \makebackcoverXII
 

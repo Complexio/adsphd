@@ -413,8 +413,8 @@
 \gdef\adsphd@doctoralschool{ads}
 \fi
 
-\ifcsdef{adsphd@doctoralschool@\adsphd@doctoralschool}{}{%
-  \ClassError{adsphd}{Unsupported value '\adsphd@doctoralschool' for class option 'doctoralschool'}{\MessageBreak}}
+% \ifcsdef{adsphd@doctoralschool@\adsphd@doctoralschool}{}{%
+%   \ClassError{adsphd}{Unsupported value '\adsphd@doctoralschool' for class option 'doctoralschool'}{\MessageBreak}}
 \gdef\@doctoralschool{\expandafter\csname adsphd@doctoralschool@\adsphd@doctoralschool \endcsname}
 
 % faculty
