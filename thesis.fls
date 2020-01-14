@@ -238,6 +238,8 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\supertabular
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\supertabular\supertabular.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-tree.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-tree.sty
+INPUT glossary.tex
+INPUT glossary.tex
 OUTPUT thesis.glo
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.sty
@@ -268,6 +270,12 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx
 INPUT biblatex.cfg
 INPUT biblatex.cfg
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fncychap\fncychap.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fncychap\fncychap.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def
@@ -296,22 +304,52 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\dutch.lbx
 INPUT thesis.aux
 INPUT thesis.aux
-INPUT chapters\preface\preface.aux
-INPUT chapters\preface\preface.aux
-INPUT chapters\abstract\abstract.aux
-INPUT chapters\abstract\abstract.aux
-INPUT chapters\abstractnl\abstractnl.aux
-INPUT chapters\abstractnl\abstractnl.aux
-INPUT chapters\introduction\introduction.aux
-INPUT chapters\introduction\introduction.aux
-INPUT chapters\manual\manual.aux
-INPUT chapters\manual\manual.aux
-INPUT chapters\conclusion\conclusion.aux
-INPUT chapters\conclusion\conclusion.aux
-INPUT chapters\myappendix\myappendix.aux
-INPUT chapters\myappendix\myappendix.aux
-INPUT chapters\curriculum\curriculum.aux
-INPUT chapters\curriculum\curriculum.aux
+INPUT chapters\00a-preface\00a-preface.aux
+INPUT chapters\00a-preface\00a-preface.aux
+INPUT chapters\00b-abstract\00b-abstract.aux
+INPUT chapters\00b-abstract\00b-abstract.aux
+INPUT chapters\00c-abstractnl\00c-abstractnl.aux
+INPUT chapters\00c-abstractnl\00c-abstractnl.aux
+INPUT chapters\01-introduction\01-introduction.aux
+INPUT chapters\01-introduction\01-introduction.aux
+INPUT chapters\99-manual\99-manual.aux
+INPUT chapters\99-manual\99-manual.aux
+INPUT chapters\02-dataset\02-dataset.aux
+INPUT chapters\02-dataset\02-dataset.aux
+INPUT chapters\03-modal_mineralogy\03-modal_mineralogy.aux
+INPUT chapters\03-modal_mineralogy\03-modal_mineralogy.aux
+INPUT chapters\04-interfaces\04-interfaces.aux
+INPUT chapters\04-interfaces\04-interfaces.aux
+INPUT chapters\05-csd\05-csd.aux
+INPUT chapters\05-csd\05-csd.aux
+INPUT chapters\06-parent_rock_characterization\06-parent_rock_characterization.aux
+INPUT chapters\06-parent_rock_characterization\06-parent_rock_characterization.aux
+INPUT chapters\07-input_GGD\07-input_GGD.aux
+INPUT chapters\07-input_GGD\07-input_GGD.aux
+INPUT chapters\08-mineral_properties\08-mineral_properties.aux
+INPUT chapters\08-mineral_properties\08-mineral_properties.aux
+INPUT chapters\09-boundary_conditions\09-boundary_conditions.aux
+INPUT chapters\09-boundary_conditions\09-boundary_conditions.aux
+INPUT chapters\10-sedgen_architecture\10-sedgen_architecture.aux
+INPUT chapters\10-sedgen_architecture\10-sedgen_architecture.aux
+INPUT chapters\11-mechanical_weathering\11-mechanical_weathering.aux
+INPUT chapters\11-mechanical_weathering\11-mechanical_weathering.aux
+INPUT chapters\12-chemical_weathering\12-chemical_weathering.aux
+INPUT chapters\12-chemical_weathering\12-chemical_weathering.aux
+INPUT chapters\13-calibration\13-calibration.aux
+INPUT chapters\13-calibration\13-calibration.aux
+INPUT chapters\14-applications\14-applications.aux
+INPUT chapters\14-applications\14-applications.aux
+INPUT chapters\15-discussion\15-discussion.aux
+INPUT chapters\15-discussion\15-discussion.aux
+INPUT chapters\16-conclusion\16-conclusion.aux
+INPUT chapters\16-conclusion\16-conclusion.aux
+INPUT chapters\99-myappendix\99-myappendix.aux
+INPUT chapters\99-myappendix\99-myappendix.aux
+INPUT chapters\99-curriculum\99-curriculum.aux
+INPUT chapters\99-curriculum\99-curriculum.aux
+INPUT chapters\99-publications\99-publications.aux
+INPUT chapters\99-publications\99-publications.aux
 OUTPUT thesis.aux
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd
@@ -365,8 +403,6 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvb8t.tfm
 INPUT C:\Users\u0108248\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\helvetic\phvb8t.vf
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvb8r.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\helvetic\phvr8t.vf
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\helvetic\phvb8t.vf
@@ -390,23 +426,23 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ts1lmss.fd
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ts1lmss.fd
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ts1-lmss8.tfm
-INPUT chapters\preface\preface.tex
-OUTPUT chapters\preface\preface.aux
-INPUT chapters\preface\preface.tex
-INPUT chapters\preface\preface.tex
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr17.tfm
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT chapters\00a-preface\00a-preface.tex
+OUTPUT chapters\00a-preface\00a-preface.aux
+INPUT chapters\00a-preface\00a-preface.tex
+INPUT chapters\00a-preface\00a-preface.tex
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx10.tfm
-INPUT chapters\abstract\abstract.tex
-OUTPUT chapters\abstract\abstract.aux
-INPUT chapters\abstract\abstract.tex
-INPUT chapters\abstract\abstract.tex
-INPUT chapters\abstractnl\abstractnl.tex
-OUTPUT chapters\abstractnl\abstractnl.aux
-INPUT chapters\abstractnl\abstractnl.tex
-INPUT chapters\abstractnl\abstractnl.tex
+INPUT chapters\00b-abstract\00b-abstract.tex
+OUTPUT chapters\00b-abstract\00b-abstract.aux
+INPUT chapters\00b-abstract\00b-abstract.tex
+INPUT chapters\00b-abstract\00b-abstract.tex
+INPUT chapters\00c-abstractnl\00c-abstractnl.tex
+OUTPUT chapters\00c-abstractnl\00c-abstractnl.aux
+INPUT chapters\00c-abstractnl\00c-abstractnl.tex
+INPUT chapters\00c-abstractnl\00c-abstractnl.tex
 INPUT thesis.toc
 INPUT thesis.toc
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmss10.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmssbx10.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr10.tfm
@@ -440,6 +476,21 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\mt
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmri10.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr12.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr8.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr6.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi12.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi8.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi6.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy10.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy8.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy6.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 OUTPUT thesis.toc
 INPUT thesis.lof
 INPUT thesis.lof
@@ -447,20 +498,14 @@ OUTPUT thesis.lof
 INPUT thesis.lot
 INPUT thesis.lot
 OUTPUT thesis.lot
-OUTPUT chapters\introduction\introduction.aux
-INPUT chapters\introduction\introduction.tex
-INPUT chapters\introduction\introduction.tex
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr17.tfm
+OUTPUT chapters\01-introduction\01-introduction.aux
+INPUT chapters\01-introduction\01-introduction.tex
+INPUT chapters\01-introduction\01-introduction.tex
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
-OUTPUT thesis.glsdefs
-INPUT chapters\introduction\image\sine.pdf
-INPUT .\chapters\introduction\image\sine.pdf
-INPUT .\chapters\introduction\image\sine.pdf
-INPUT .\chapters\introduction\image\sine.pdf
-OUTPUT chapters\manual\manual.aux
-INPUT chapters\manual\manual.tex
-INPUT chapters\manual\manual.tex
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx9.tfm
+OUTPUT chapters\99-manual\99-manual.aux
+INPUT chapters\99-manual\99-manual.tex
+INPUT chapters\99-manual\99-manual.tex
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmtt10.tfm
@@ -473,63 +518,146 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmtt8.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr8.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmtt8.tfm
-OUTPUT chapters\conclusion\conclusion.aux
-INPUT chapters\conclusion\conclusion.tex
-INPUT chapters\conclusion\conclusion.tex
-INPUT chapters\myappendix\myappendix.tex
-OUTPUT chapters\myappendix\myappendix.aux
-INPUT chapters\myappendix\myappendix.tex
-INPUT chapters\myappendix\myappendix.tex
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmcsc10.tfm
-INPUT chapters\curriculum\curriculum.tex
-OUTPUT chapters\curriculum\curriculum.aux
-INPUT chapters\curriculum\curriculum.tex
-INPUT chapters\curriculum\curriculum.tex
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr17.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr17.tfm
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
+OUTPUT chapters\02-dataset\02-dataset.aux
+INPUT chapters\02-dataset\02-dataset.tex
+INPUT chapters\02-dataset\02-dataset.tex
+OUTPUT chapters\03-modal_mineralogy\03-modal_mineralogy.aux
+INPUT chapters\03-modal_mineralogy\03-modal_mineralogy.tex
+INPUT chapters\03-modal_mineralogy\03-modal_mineralogy.tex
+OUTPUT chapters\04-interfaces\04-interfaces.aux
+INPUT chapters\04-interfaces\04-interfaces.tex
+INPUT chapters\04-interfaces\04-interfaces.tex
+OUTPUT chapters\05-csd\05-csd.aux
+INPUT chapters\05-csd\05-csd.tex
+INPUT chapters\05-csd\05-csd.tex
+OUTPUT chapters\06-parent_rock_characterization\06-parent_rock_characterization.aux
+INPUT chapters\06-parent_rock_characterization\06-parent_rock_characterization.tex
+INPUT chapters\06-parent_rock_characterization\06-parent_rock_characterization.tex
+OUTPUT chapters\07-input_GGD\07-input_GGD.aux
+INPUT chapters\07-input_GGD\07-input_GGD.tex
+INPUT chapters\07-input_GGD\07-input_GGD.tex
+OUTPUT chapters\08-mineral_properties\08-mineral_properties.aux
+INPUT chapters\08-mineral_properties\08-mineral_properties.tex
+INPUT chapters\08-mineral_properties\08-mineral_properties.tex
+OUTPUT chapters\09-boundary_conditions\09-boundary_conditions.aux
+INPUT chapters\09-boundary_conditions\09-boundary_conditions.tex
+INPUT chapters\09-boundary_conditions\09-boundary_conditions.tex
+OUTPUT chapters\10-sedgen_architecture\10-sedgen_architecture.aux
+INPUT chapters\10-sedgen_architecture\10-sedgen_architecture.tex
+INPUT chapters\10-sedgen_architecture\10-sedgen_architecture.tex
+OUTPUT chapters\11-mechanical_weathering\11-mechanical_weathering.aux
+INPUT chapters\11-mechanical_weathering\11-mechanical_weathering.tex
+INPUT chapters\11-mechanical_weathering\11-mechanical_weathering.tex
+OUTPUT chapters\12-chemical_weathering\12-chemical_weathering.aux
+INPUT chapters\12-chemical_weathering\12-chemical_weathering.tex
+INPUT chapters\12-chemical_weathering\12-chemical_weathering.tex
+OUTPUT chapters\13-calibration\13-calibration.aux
+INPUT chapters\13-calibration\13-calibration.tex
+INPUT chapters\13-calibration\13-calibration.tex
+OUTPUT chapters\14-applications\14-applications.aux
+INPUT chapters\14-applications\14-applications.tex
+INPUT chapters\14-applications\14-applications.tex
+OUTPUT chapters\15-discussion\15-discussion.aux
+INPUT chapters\15-discussion\15-discussion.tex
+INPUT chapters\15-discussion\15-discussion.tex
+OUTPUT chapters\16-conclusion\16-conclusion.aux
+INPUT chapters\16-conclusion\16-conclusion.tex
+INPUT chapters\16-conclusion\16-conclusion.tex
+INPUT chapters\99-myappendix\99-myappendix.tex
+OUTPUT chapters\99-myappendix\99-myappendix.aux
+INPUT chapters\99-myappendix\99-myappendix.tex
+INPUT chapters\99-myappendix\99-myappendix.tex
+INPUT chapters\99-curriculum\99-curriculum.tex
+OUTPUT chapters\99-curriculum\99-curriculum.aux
+INPUT chapters\99-curriculum\99-curriculum.tex
+INPUT chapters\99-curriculum\99-curriculum.tex
+INPUT chapters\99-publications\99-publications.tex
+OUTPUT chapters\99-publications\99-publications.aux
+INPUT chapters\99-publications\99-publications.tex
+INPUT chapters\99-publications\99-publications.tex
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvr8t.tfm
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\helvetic\phvr8t.vf
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT image\sedes.pdf
 INPUT .\image\sedes.pdf
 INPUT .\image\sedes.pdf
 INPUT .\image\sedes.pdf
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\helvetic\phvr8t.vf
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT thesis.aux
-INPUT chapters\preface\preface.aux
-INPUT chapters\preface\preface.aux
-INPUT chapters\abstract\abstract.aux
-INPUT chapters\abstract\abstract.aux
-INPUT chapters\abstractnl\abstractnl.aux
-INPUT chapters\abstractnl\abstractnl.aux
-INPUT chapters\introduction\introduction.aux
-INPUT chapters\introduction\introduction.aux
-INPUT chapters\manual\manual.aux
-INPUT chapters\manual\manual.aux
-INPUT chapters\conclusion\conclusion.aux
-INPUT chapters\conclusion\conclusion.aux
-INPUT chapters\myappendix\myappendix.aux
-INPUT chapters\myappendix\myappendix.aux
-INPUT chapters\curriculum\curriculum.aux
-INPUT chapters\curriculum\curriculum.aux
+INPUT chapters\00a-preface\00a-preface.aux
+INPUT chapters\00a-preface\00a-preface.aux
+INPUT chapters\00b-abstract\00b-abstract.aux
+INPUT chapters\00b-abstract\00b-abstract.aux
+INPUT chapters\00c-abstractnl\00c-abstractnl.aux
+INPUT chapters\00c-abstractnl\00c-abstractnl.aux
+INPUT chapters\01-introduction\01-introduction.aux
+INPUT chapters\01-introduction\01-introduction.aux
+INPUT chapters\99-manual\99-manual.aux
+INPUT chapters\99-manual\99-manual.aux
+INPUT chapters\02-dataset\02-dataset.aux
+INPUT chapters\02-dataset\02-dataset.aux
+INPUT chapters\03-modal_mineralogy\03-modal_mineralogy.aux
+INPUT chapters\03-modal_mineralogy\03-modal_mineralogy.aux
+INPUT chapters\04-interfaces\04-interfaces.aux
+INPUT chapters\04-interfaces\04-interfaces.aux
+INPUT chapters\05-csd\05-csd.aux
+INPUT chapters\05-csd\05-csd.aux
+INPUT chapters\06-parent_rock_characterization\06-parent_rock_characterization.aux
+INPUT chapters\06-parent_rock_characterization\06-parent_rock_characterization.aux
+INPUT chapters\07-input_GGD\07-input_GGD.aux
+INPUT chapters\07-input_GGD\07-input_GGD.aux
+INPUT chapters\08-mineral_properties\08-mineral_properties.aux
+INPUT chapters\08-mineral_properties\08-mineral_properties.aux
+INPUT chapters\09-boundary_conditions\09-boundary_conditions.aux
+INPUT chapters\09-boundary_conditions\09-boundary_conditions.aux
+INPUT chapters\10-sedgen_architecture\10-sedgen_architecture.aux
+INPUT chapters\10-sedgen_architecture\10-sedgen_architecture.aux
+INPUT chapters\11-mechanical_weathering\11-mechanical_weathering.aux
+INPUT chapters\11-mechanical_weathering\11-mechanical_weathering.aux
+INPUT chapters\12-chemical_weathering\12-chemical_weathering.aux
+INPUT chapters\12-chemical_weathering\12-chemical_weathering.aux
+INPUT chapters\13-calibration\13-calibration.aux
+INPUT chapters\13-calibration\13-calibration.aux
+INPUT chapters\14-applications\14-applications.aux
+INPUT chapters\14-applications\14-applications.aux
+INPUT chapters\15-discussion\15-discussion.aux
+INPUT chapters\15-discussion\15-discussion.aux
+INPUT chapters\16-conclusion\16-conclusion.aux
+INPUT chapters\16-conclusion\16-conclusion.aux
+INPUT chapters\99-myappendix\99-myappendix.aux
+INPUT chapters\99-myappendix\99-myappendix.aux
+INPUT chapters\99-curriculum\99-curriculum.aux
+INPUT chapters\99-curriculum\99-curriculum.aux
+INPUT chapters\99-publications\99-publications.aux
+INPUT chapters\99-publications\99-publications.aux
 INPUT .\thesis.out
 INPUT .\thesis.out
 INPUT thesis.run.xml
 OUTPUT thesis.run.xml
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathsy.enc
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-ts1.enc
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-rm.enc
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\base\8r.enc
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx12.pfb
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx9.pfb
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx9.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbxi10.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbxi10.pfb
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmcsc10.pfb
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmcsc10.pfb
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi10.pfb
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi10.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmri10.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmri10.pfb
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmss12.pfb
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmss12.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmss8.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmss8.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmssbx10.pfb

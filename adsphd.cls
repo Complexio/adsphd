@@ -572,8 +572,14 @@
 %\RequirePackage{pifont}   % Dingbats
 
 \newcommand{\labfont}{\fontfamily{phv}\selectfont} % fonts used in labels
-\usepackage{sectsty}
-\allsectionsfont{\sffamily}
+\usepackage{sectsty} % used to change section font, size etc.
+% \allsectionsfont{\fontfamily{T1}\selectfont}
+\sectionfont{\large\bfseries\rmfamily}
+\subsectionfont{\small\bfseries\rmfamily}
+\subsubsectionfont{\small\bfseries\rmfamily}
+\paragraphfont{\small\rmfamily}
+\partfont{\Large\rmfamily\bfseries}
+% \allsectionsfont{\sffamily}
 \DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
 
 % TABLE OF CONTENTS

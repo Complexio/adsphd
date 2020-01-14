@@ -1,46 +1,27 @@
 % Encoding: UTF-8
-@InProceedings{FrRo2010Diffusion,
-  author = {{Frederix}, Yves and {Roose}, Dirk},
-  title = "A drift-filtered approach to diffusion estimation for
-    multiscale processes",
-  booktitle = {Coping with complexity: model reduction and data analysis},
-  year =  {2010},
-  volume = {75},
-  series = {Lecture Notes in Computational Science and Engineering},
-  publisher = {Springer-Verlag},
-}
 
-@phdthesis{Meert2011PhD,
-	Author = {Meert, Wannes},
-	Month = Mar,
-	Note = {Blockeel, Hendrik (supervisor)},
-	Pages = {188 + xix},
-	School = {Informatics Section, Department of Computer Science, Faculty of Engineering},
-	Title = {Inference and Learning for Directed Probabilistic Logic Models},
-	Url = {https://lirias.kuleuven.be/handle/123456789/298694},
-	Year = {2011},
-}
-
-@inproceedings{VandenBroeck2011IJCAI,
-	Author = {Van den Broeck, Guy and Taghipour, Nima and Meert, Wannes and Davis, Jesse and De Raedt, Luc},
-	Title = {Lifted probabilistic inference by first-order knowledge compilation},
-	Booktitle = {Proceedings of the 22th International Joint Conference on Artificial Intelligence (IJCAI)},
-	Eventdate = {2011-07-16/2011-07-22},
-	Eventtitle = {22th International Joint Conference on Artificial Intelligence (IJCAI)},
-	Keywords = {ijcai},
-	Read = {Yes},
-	Venue = {Barcelona, Spain},
-	Year = {2011}
-}
-
-@Article{Higgins2010,
+@article{Higgins2010,
   author  = {Higgins, Michael},
   title   = {Imaging birefringent minerals without extinction using circularly polarized light},
   journal = {Canadian Mineralogist},
   year    = {2010},
   volume  = {48},
   pages   = {231-235},
-  month   = {03},
 }
+
+@article{Hobley2017,
+         Author = {Hobley, D. E. J. and Adams, J. M. and
+                   Nudurupati, S. S. and Hutton, E. W. H.
+                   and Gasparini, N. M. and Istanbulluoglu,
+                   E. and Tucker, G. E.},
+         Journal = {Earth Surface Dynamics},
+         Year = {2017},
+         Title = {Creative computing with Landlab: an open-source
+                  toolkit for building, coupling, and exploring
+                  two-dimensional numerical models of
+                  Earth-surface dynamics},
+         Number = {5},
+         Pages = {21-46},
+         Doi = {10.5194/esurf-5-21-2017}}
 
 @Comment{jabref-meta: databaseType:bibtex;}

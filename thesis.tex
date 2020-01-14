@@ -1,4 +1,4 @@
-\documentclass[showinstructions,faculty=fw,department=aow,phddegree=glo]{adsphd} %add final to arguments to obtain final version
+\documentclass[showinstructions, faculty=fw,department=aow,phddegree=glo]{adsphd} %add final to arguments to obtain final version
 %\documentclass[showinstructions,showlabels,coverfontpercent=100,faculty=fw,department=aow,phddegree=glo]{adsphd}
 %\documentclass[croppedpdf,showinstructions,faculty=fw,department=aow,phddegree=glo]{adsphd}
 %\documentclass[online,faculty=fw,department=aow,phddegree=glo]{adsphd}
@@ -60,6 +60,7 @@
 
 %%% COVER: End settings %%%
 
+
 % for the nomenclature (comment out if you do not use the nomencl package
 \usepackage{nomencl}   % For nomenclature
 \renewcommand{\nomname}{List of Symbols}
@@ -73,6 +74,10 @@
 
 % for the list of abbreviations (comment out if you do not use the glossaries package
 \usepackage{glossaries} % For list of abbreviations
+
+% Input glossary entries via TeX file
+\input{glossary.tex}
+
 \newcommand{\glossname}{List of Abbreviations}
 \newcommand{\myprintglossary}{%
   \renewcommand{\glossaryname}{\glossname}
@@ -97,12 +102,19 @@
 \addbibresource{allpapers.bib}
 
 % Fonts
+% \usepackage[scaled]{helvet}
+% \renewcommand\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+\usepackage[Sonny]{fncychap}
+\ChTitleVar{\Large\centering\sf}
+\ChNumVar{\large\sf\bfseries}
+\ChNameVar{\large\sf}
 \usepackage{textcomp} % nice greek alphabet
 \usepackage{pifont}   % Dingbats
 \usepackage{booktabs}
 \usepackage{amssymb,amsthm}
 \usepackage{amsmath}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -124,7 +136,7 @@
 % 1. manual creation of list of abbreviations and inclusion as a chapter
 %    \includeabbreviations{abbreviations}
 % 2. automatic generation via the glossary package
-%    \glossary{name=MD,description=molecular dynamics}
+   % \glossary{name=MD,description=molecular dynamics}
 \myprintglossary
 
 % To create a list of symbols, there are 2 options
@@ -161,10 +173,12 @@
 \includechapter{07-input_GGD}
 \includechapter{08-mineral_properties}
 \includechapter{09-boundary_conditions}
+
 \part{Calculations/Implications/Algorithms}
 \includechapter{10-sedgen_architecture}
 \includechapter{11-mechanical_weathering}
 \includechapter{12-chemical_weathering}
+
 \part{Applications}
 \includechapter{13-calibration}
 \includechapter{14-applications}
