@@ -14,6 +14,12 @@
 % !!                                                               !!
 % !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+
+% LaTeX science paper tips and tricks
+% https://github.com/Wookai/paper-tips-and-tricks
+% https://www.semipol.de/2018/06/12/latex-best-practices.html
+
+
 %%% COVER: Settings %%%
 \title{Numerical Modelling of Sediment Generation}
 %\subtitle{}
@@ -63,6 +69,9 @@
 
 % for the nomenclature (comment out if you do not use the nomencl package
 \usepackage{nomencl}   % For nomenclature
+
+\input{nomenclature.tex}
+
 \renewcommand{\nomname}{List of Symbols}
 \newcommand{\myprintnomenclature}{%
   \cleardoublepage%
@@ -77,6 +86,7 @@
 
 % Input glossary entries via TeX file
 \input{glossary.tex}
+% https://tex.stackexchange.com/questions/329372/glossaries-package-and-latextools
 
 \newcommand{\glossname}{List of Abbreviations}
 \newcommand{\myprintglossary}{%
@@ -96,7 +106,7 @@
   hyperref=auto,
   mincrossrefs=999,
   backend=biber,
-  style=authoryear-icomp,
+  style=authoryear-comp,
   doi=false
 ]{biblatex}
 \addbibresource{allpapers.bib}
@@ -137,6 +147,7 @@
 %    \includeabbreviations{abbreviations}
 % 2. automatic generation via the glossary package
    % \glossary{name=MD,description=molecular dynamics}
+\gls{GGD}
 \myprintglossary
 
 % To create a list of symbols, there are 2 options
@@ -158,7 +169,7 @@
 \instructionschapters\cleardoublepage
 
 \includechapter{01-introduction}
-\includechapter{99-manual} % Remove this chapter
+% \includechapter{99-manual} % Remove this chapter
 
 % Insert here your own chapters
 % Chapters are expected to be in a tex-file with the given name dot

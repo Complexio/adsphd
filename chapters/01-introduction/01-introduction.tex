@@ -16,15 +16,63 @@
 % Illustration of how to include citations \cite{Meert2011PhD} and \cite{VandenBroeck2011IJCAI}. %
 
 \section{General introduction}
-    Sediment generation
+    Sediment generation is the research field in which one tries to understand how parent rock generates sediment along a specific pathway. %
+
+    \paragraph*{}
+    \textbf{Parent rock} is the rock from which the entire sediment generation process starts from. %
+    The properties of such a parent rock already limit the possible outcomes of the final sediment. %
+    Therefore, a proper way of characterizing the parent rock and thus its properties should be applied. %
+
+    \paragraph*{}
+    The \textbf{pathway} looks at by which processes sediment generation occurs, and along with it to which degree each process effects the outcome. %
+    Mechanical and chemical weathering are the major two groups with regard to the outlook of a pathway. %
+
+    \paragraph*{}
+    The properties of the resulting \textbf{sediment} is also of major interest.
+
+
+\section{General remarks}
+    \begin{itemize}
+        \item In all relevant chapters parts of the SedGen model classes/functions/objects/constructs/ scripts may be included in the text or referenced as in appendix or online. %
+        \item Always note what we are and what we are not implementing into the model \(\Rightarrow\) Things can always be improved later on due to SedGen’s modularity. %
+    \end{itemize}
+
+
+\section{Chapter outline}
+    \begin{enumerate}
+        \item Introduction
+
+        \item Input
+        \begin{enumerate}
+            \item Dataset
+            \item Generalized Griffiths Descriptor (Paredis et al. 2020)
+            \item Modal mineralogy (Weltje \& Paredis 2020)
+            \item Relative interface frequencies (Weltje et al. 2018)
+            \item Crystal size distribution (Paredis et al. 2020)
+        \end{enumerate}
+
+        \item SedGen model
+        \begin{enumerate}
+            \item SedGen architecture
+            \item Mechanical weathering
+            \item Chemical weathering and clay formation
+        \end{enumerate}
+
+        \item Applications
+        \begin{enumerate}
+            \item Calibration
+            \item Post-processing + applications/test
+            \item General discussion and perspectives
+        \end{enumerate}
+
+        \item Conclusions
+    \end{enumerate}
 
 
 \section{Parent rock characterization}
     A general approach to the characterization of parent rocks should be established if one wants to be the input of a sediment generation model to be applicable to multiple input conditions. %
     Therefore, the descriptor as proposed by \cite{Griffiths_1952,Griffiths_1961} was extended to apply to parent rocks. %
     The Generalized Griffiths Descriptor (\gls{GGD}). %
-    \gls{A}
-
 
 
 \section{Model architecture}
@@ -42,8 +90,7 @@
 
     \subsection{Input \& pre-processing}
     Necessary user input data consists of three parts: modal mineralogy, relative interface frequencies and crystal size distribution. %
-    (i) The modal mineralogy contains the volume proportions of the minerals present in the source rock. %
-    See chapter \ref{ch:modal_mineralogy}. %
+    (i) The modal mineralogy contains the volume proportions of the minerals present in the source rock. % See chapter \ref{ch:modal_mineralogy}. %
     (ii) The relative interface frequencies contain the fractions of all present mineral interface occurrences. %
     See chapter \ref{ch:interfaces}. %
     (iii) The crystal size distribution (CSD) provides information on the 3D aspects of the present minerals. %

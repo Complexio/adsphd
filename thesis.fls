@@ -4,10 +4,10 @@ INPUT thesis.tex
 OUTPUT thesis.log
 INPUT adsphd.cls
 INPUT adsphd.cls
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\iftex\iftex.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\iftex\iftex.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifpdf.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifpdf.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
 INPUT C:\Users\u0108248\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
 INPUT C:\Users\u0108248\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
@@ -22,20 +22,14 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\dvi
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def
 INPUT C:\Users\u0108248\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\svgnam.def
 INPUT C:\Users\u0108248\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\svgnam.def
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\kvoptions\kvoptions.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvsetkeys\kvsetkeys.sty
 INPUT C:\Users\u0108248\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Users\u0108248\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
 INPUT adsphd.cfg
@@ -108,27 +102,52 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\set
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hycolor\xcolor-patch.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hycolor\xcolor-patch.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\hopatch.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\hopatch.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\auxhook\auxhook.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\etexcmds\etexcmds.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg
 INPUT C:\Users\u0108248\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 INPUT C:\Users\u0108248\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\bitset\bitset.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\bitset\bitset.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\atbegshi\atbegshi.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\uniquecounter\uniquecounter.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifvtex.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\crop\crop.sty
@@ -201,6 +220,8 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrbase.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty
+INPUT nomenclature.tex
+INPUT nomenclature.tex
 OUTPUT thesis.nlo
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\base\glossaries.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\base\glossaries.sty
@@ -259,14 +280,14 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.def
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.def
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\authoryear-icomp.bbx
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\authoryear-icomp.bbx
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\authoryear-comp.bbx
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\authoryear-comp.bbx
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\authoryear.bbx
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\authoryear.bbx
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\authoryear-icomp.cbx
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\authoryear-icomp.cbx
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\authoryear-comp.cbx
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\authoryear-comp.cbx
 INPUT biblatex.cfg
 INPUT biblatex.cfg
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
@@ -298,10 +319,6 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ams
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\dutch.lbx
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\dutch.lbx
 INPUT thesis.aux
 INPUT thesis.aux
 INPUT chapters\00a-preface\00a-preface.aux
@@ -312,8 +329,6 @@ INPUT chapters\00c-abstractnl\00c-abstractnl.aux
 INPUT chapters\00c-abstractnl\00c-abstractnl.aux
 INPUT chapters\01-introduction\01-introduction.aux
 INPUT chapters\01-introduction\01-introduction.aux
-INPUT chapters\99-manual\99-manual.aux
-INPUT chapters\99-manual\99-manual.aux
 INPUT chapters\02-dataset\02-dataset.aux
 INPUT chapters\02-dataset\02-dataset.aux
 INPUT chapters\03-modal_mineralogy\03-modal_mineralogy.aux
@@ -358,14 +373,14 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr10.tfm
 INPUT C:\Users\u0108248\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 INPUT C:\Users\u0108248\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\refcount\refcount.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\refcount\refcount.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\generic\gettitlestring\gettitlestring.sty
 INPUT thesis.out
 INPUT thesis.out
 INPUT thesis.out
@@ -378,6 +393,10 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\mt
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\mt-cmr.cfg
 INPUT thesis.glsdefs
 INPUT thesis.glsdefs
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\dutch.lbx
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\dutch.lbx
 OUTPUT thesis.bcf
 INPUT thesis.bbl
 INPUT thesis.bbl
@@ -439,6 +458,9 @@ INPUT chapters\00c-abstractnl\00c-abstractnl.tex
 OUTPUT chapters\00c-abstractnl\00c-abstractnl.aux
 INPUT chapters\00c-abstractnl\00c-abstractnl.tex
 INPUT chapters\00c-abstractnl\00c-abstractnl.tex
+INPUT thesis.gls
+INPUT thesis.gls
+INPUT thesis.gls
 INPUT thesis.toc
 INPUT thesis.toc
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmss10.tfm
@@ -475,7 +497,6 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\mt
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmri10.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr12.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr8.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr6.tfm
@@ -503,21 +524,9 @@ INPUT chapters\01-introduction\01-introduction.tex
 INPUT chapters\01-introduction\01-introduction.tex
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx9.tfm
-OUTPUT chapters\99-manual\99-manual.aux
-INPUT chapters\99-manual\99-manual.tex
-INPUT chapters\99-manual\99-manual.tex
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmtt10.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ts1-lmr10.tfm
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr5.tfm
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmtt8.tfm
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbxi10.tfm
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmtt8.tfm
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr8.tfm
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmtt8.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr17.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr17.tfm
@@ -571,6 +580,7 @@ INPUT chapters\99-myappendix\99-myappendix.tex
 OUTPUT chapters\99-myappendix\99-myappendix.aux
 INPUT chapters\99-myappendix\99-myappendix.tex
 INPUT chapters\99-myappendix\99-myappendix.tex
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmri10.tfm
 INPUT chapters\99-curriculum\99-curriculum.tex
 OUTPUT chapters\99-curriculum\99-curriculum.aux
 INPUT chapters\99-curriculum\99-curriculum.tex
@@ -595,8 +605,6 @@ INPUT chapters\00c-abstractnl\00c-abstractnl.aux
 INPUT chapters\00c-abstractnl\00c-abstractnl.aux
 INPUT chapters\01-introduction\01-introduction.aux
 INPUT chapters\01-introduction\01-introduction.aux
-INPUT chapters\99-manual\99-manual.aux
-INPUT chapters\99-manual\99-manual.aux
 INPUT chapters\02-dataset\02-dataset.aux
 INPUT chapters\02-dataset\02-dataset.aux
 INPUT chapters\03-modal_mineralogy\03-modal_mineralogy.aux
@@ -637,10 +645,9 @@ INPUT .\thesis.out
 INPUT .\thesis.out
 INPUT thesis.run.xml
 OUTPUT thesis.run.xml
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-ec.enc
+INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-ts1.enc
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\base\8r.enc
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx10.pfb
@@ -648,10 +655,6 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx9.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx9.pfb
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbxi10.pfb
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbxi10.pfb
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi10.pfb
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi10.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmri10.pfb
@@ -664,10 +667,6 @@ INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmssbx10.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy10.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy10.pfb
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmtt10.pfb
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmtt10.pfb
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmtt8.pfb
-INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmtt8.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\helvetic\uhvb8a.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\helvetic\uhvb8a.pfb
 INPUT C:\Users\u0108248\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\helvetic\uhvr8a.pfb
