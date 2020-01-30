@@ -1,14 +1,5 @@
 % Encoding: UTF-8
 
-@article{Higgins2010,
-  author  = {Higgins, Michael},
-  title   = {Imaging birefringent minerals without extinction using circularly polarized light},
-  journal = {Canadian Mineralogist},
-  year    = {2010},
-  volume  = {48},
-  pages   = {231-235},
-}
-
 @article{Hobley2017,
          Author = {Hobley, D. E. J. and Adams, J. M. and
                    Nudurupati, S. S. and Hutton, E. W. H.
@@ -23,5 +14,170 @@
          Number = {5},
          Pages = {21-46},
          Doi = {10.5194/esurf-5-21-2017}}
+
+@Article{Weltje_et_al_2018,
+  author  = {Weltje, G. J. and Paredis, B. and Caracciolo, L. and Heins, W. A.},
+  title   = {Quantitative analysis of crystal-interface frequencies in granitoids: Implications for modelling of parent-rock texture and its influence on the properties of plutoniclastic sands},
+  journal = {Sedimentary Geology},
+  year    = {2018},
+  volume  = {375},
+  pages   = {72-85},
+  file    = {:D\:/Box Sync/Documenten/Doctoraat/SedGen/Documents/Articles/Weltje et al. 2018.pdf:PDF},
+}
+
+@Book{Allen_2017,
+  title     = {Sediment Routing Systems: The Fate of Sediment from Source to Sink},
+  publisher = {Cambridge University Press},
+  year      = {2017},
+  author    = {Allen, P. A.},
+  file      = {:D\:\\Box Sync\\Documenten\\Doctoraat\\SedGen\\Documents\\Books\\Allen P. (2017) - Sediment Routing Systems.pdf:PDF},
+  pages     = {422} # p.,
+}
+
+@Article{Higgins_2010,
+  author    = {Higgins, M. D.},
+  title     = {Imaging birefringent minerals without extinction using circularly polarized light},
+  journal   = {The Canadian Mineralogist},
+  year      = {2010},
+  volume    = {48},
+  number    = {1},
+  pages     = {231--235},
+  doi       = {10.3749/canmin.48.1.231},
+  file      = {:D\:\\Box Sync\\Documenten\\Doctoraat\\SedGen\\Documents\\Articles\\Higgins 2010.pdf:PDF},
+  publisher = {Mineralogical Association of Canada},
+}
+
+@Book{Higgins_2006,
+  title     = {Quantitative Textural Measurements in Igneous and Metamorphic Petrology},
+  publisher = {Cambridge University Press, Cambridge},
+  year      = {2006},
+  author    = {Higgins, M. D.},
+  file      = {:D\:/Box Sync/Documenten/Doctoraat/SedGen/Documents/Books/Higgins (2006) - Quantitative Textural Measurements in Igneous and Metamorphic Petrology.pdf:PDF},
+  pages     = {270 p.},
+}
+
+@Article{Higgins_2000,
+  author  = {Higgins, M. D.},
+  title   = {Measurement of crystal size distributions},
+  journal = {American Mineralogist},
+  year    = {2000},
+  volume  = {85},
+  pages   = {1105-1116},
+  file    = {:D\:/Box Sync/Documenten/Doctoraat/SedGen/Documents/Articles/Higgins 2000.pdf:PDF},
+}
+
+@Article{Peterson_1996,
+  author   = {Peterson, T. D.},
+  title    = {A refined technique for measuring crystal size distributions in thin section},
+  journal  = {Contributions to Mineralogy and Petrology},
+  year     = {1996},
+  volume   = {124},
+  pages    = {395–405},
+  abstract = {Log-normal size distributions are of the form lations of crystals with different size ranges can be an
+n5n e2Lyao , where n5number density, L5crystal length, important step in understanding the dynamic history of a
+and a is a constant. A method for measuring three-di- rock. In magmas, crystal size distributions (CSDs) re-
+mensional log-normal crystal or grain size distributions flect crystal nucleation and growth rates, differential
+(CSDs) in thin section has been deduced from computer movement of melt and solids, and residence times in
+experiments, in which 2D sections were cut through as- magma chambers (Marsh 1988a, b; Cashman and Marsh
+semblages of 3D solids. The size ranges and distributions 1988). The size distribution of grains in sedimentary
+studied were appropriate for igneous microphenocryst to rocks may be strongly controlled by dynamic sorting; in
+megacryst populations. Conversion from 2D to 3D is metamorphic rocks, different pressure-time-tempera-
+based on an exact correction for spheres of uniform di- ture paths and nucleation mechanisms may yield differ-
+ameter. Cumulate numbers of polygons with length$L ent crystal size distributions for neoblasts.
+(N2D) are converted to N3D by the equation: Physical separation of mineral grains is a routine step},
+  file     = {:D\:\\Box Sync\\Documenten\\Doctoraat\\SedGen\\Documents\\Articles\\Peterson 1996.pdf:PDF},
+}
+
+@Article{Heins_1995,
+  author  = {Heins, W. A.},
+  title   = {The use of mineral interfaces in sand-sized rock fragments to infer ancient climate},
+  journal = {Geological Society of America Bulletin},
+  year    = {1995},
+  volume  = {107},
+  pages   = {113-125},
+  file    = {:D\:/Box Sync/Documenten/Doctoraat/SedGen/Projects/Project Heins/Heins (1992) PhD thesis/Heins (1995) GSAB.pdf:PDF},
+}
+
+@Article{Heins_1993,
+  author  = {Heins, W. A.},
+  title   = {Source rock texture versus climate and topography as controls on the composition of modern plutoniclastic sand},
+  journal = {Geological Society of America},
+  year    = {1993},
+  volume  = {Special paper 284},
+  pages   = {135-146},
+  file    = {:D\:/Box Sync/Documenten/Doctoraat/SedGen/Projects/Project Heins/Heins (1992) PhD thesis/Heins (1993) GSA SP284.pdf:PDF},
+}
+
+@PhdThesis{Heins_1992,
+  author = {Heins, W. A.},
+  title  = {The effect of climate and topography on the composition of modern plutoniclastic sand},
+  school = {University of California, Los Angeles},
+  year   = {1992},
+  file   = {:D\:/Box Sync/Documenten/Doctoraat/SedGen/Projects/Project Heins/Heins (1992) PhD thesis/Heins (1992) - Thesis.pdf:PDF},
+  pages  = {465 p.},
+}
+
+@Article{Griffiths_1961,
+  author  = {Griffiths, J. C.},
+  title   = {Measurement of the properties of sediments},
+  journal = {The Journal of Geology},
+  year    = {1961},
+  volume  = {69},
+  pages   = {487-498},
+  file    = {:D\:/Box Sync/Documenten/Doctoraat/SedGen/Documents/Articles/Griffiths 1961.pdf:PDF},
+}
+
+@Article{Griffiths_1952,
+  author  = {Griffiths, J. C.},
+  title   = {Grain-size distribution and reservoir-rock characteristics},
+  journal = {AAPG Bulletin},
+  year    = {1952},
+  volume  = {36},
+  pages   = {205-229},
+  file    = {:D\:/Box Sync/Documenten/Doctoraat/SedGen/Documents/Articles/Griffiths 1952.pdf:PDF},
+}
+
+@Article{Streckeisen_1974,
+  author  = {Streckeisen, A.},
+  title   = {Classification and Nomenclature and of Plutonic Rocks},
+  journal = {Geologische Rundschau},
+  year    = {1974},
+  volume  = {63},
+  pages   = {773-786},
+  file    = {:D\:\\Box Sync\\Documenten\\Doctoraat\\SedGen\\Projects\\2018 Spatial variability\\Articles\\Streckeisen 1974.pdf:PDF},
+}
+
+@Article{Streckeisen_1980,
+  author  = {Streckeisen, A.},
+  title   = {Classification and Nomenclature of Volcanic Rocks, Lamprophyres, Carbonatites and Melilitic Rocks},
+  journal = {Geologische Rundschau},
+  year    = {1980},
+  volume  = {69},
+  pages   = {194-207},
+  doi     = {t},
+  file    = {:D\:\\Box Sync\\Documenten\\Doctoraat\\SedGen\\Projects\\2018 Spatial variability\\Articles\\Streckeisen 1980.pdf:PDF},
+}
+
+@Article{Oliver&Webster_2014,
+  author    = {Oliver, M. A. and Webster, R.},
+  title     = {A tutorial guide to geostatistics: Computing and modelling variograms and kriging},
+  journal   = {Catena},
+  year      = {2014},
+  volume    = {113},
+  pages     = {56--69},
+  month     = {feb},
+  doi       = {10.1016/j.catena.2013.09.006},
+  file      = {:D\:\\Box Sync\\Documenten\\Doctoraat\\SedGen\\Projects\\2018 Spatial variability\\Articles\\Oliver & Webster 2014.pdf:PDF},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Vistelius_et_al_1983,
+  author  = {Vistelius, A. B. and Agterberg, F. P. and Divi, S. R. and Hogarth, D. D.},
+  title   = {A stochastic model for the crystallization and textural analysis of a fine grained granitic stock near Meech Lake, Gatineau Park, Quebec},
+  journal = {Geological Survey of Canada},
+  year    = {1983},
+  pages   = {67},
+  file    = {:D\:\\Box Sync\\Documenten\\Doctoraat\\SedGen\\Projects\\2018 Spatial variability\\Raw_data\\Meech Lake pluton\\Vistelius et al. (1983) GSCP 81-21.pdf:PDF},
+}
 
 @Comment{jabref-meta: databaseType:bibtex;}

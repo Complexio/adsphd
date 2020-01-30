@@ -46,7 +46,7 @@
                               % that 'B-3001 Heverlee' is _incorrect_!!
                               % /[https://www.kuleuven.be/communicatie/marketing/intranet/huisstijl/taalgebruik.html]
 
-\date{April 2020}
+\date{August 2020}
 \copyyear{2020}
 %\udc{XXX.XX}            % UDC, deposit number and ISBN are no longer necessary.
 %\depot{XXXX/XXXX/XX}    % Leave out the initial D/ (it is added
@@ -122,9 +122,17 @@
 \ChNameVar{\large\sf}
 \usepackage{textcomp} % nice greek alphabet
 \usepackage{pifont}   % Dingbats
-\usepackage{booktabs}
+\usepackage{booktabs} % Needed for professional looking tables
 \usepackage{amssymb,amsthm}
 \usepackage{amsmath}
+\usepackage[]{threeparttable} % Create tables with footnotes
+\usepackage{caption} % Set spacing between figure/table and its caption
+\captionsetup[table]{skip=10pt}
+% Set spacing between sentences to exaclty one space instead of Latex’s ``rubber spacing''
+% \frenchspacing
+
+% Babel additions
+\addto\extrasenglish{\def\ca{ca.\@ }}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -147,7 +155,6 @@
 %    \includeabbreviations{abbreviations}
 % 2. automatic generation via the glossary package
    % \glossary{name=MD,description=molecular dynamics}
-\gls{GGD}
 \myprintglossary
 
 % To create a list of symbols, there are 2 options
@@ -201,6 +208,7 @@
 
 \appendix
 
+\part*{Appendices}
 \includeappendix{99-myappendix}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
