@@ -4,6 +4,88 @@
 %
 % Look at Hobley et al 2017 for a good overview of how to write the backbones for this chapter
 %
+\section{Introduction}
+SedGen was written in Python, a popular, low-level, easy-to-use, programming language at the time of writing. %
+The code base has been tracked through Git with an online version available on GitHub (see link). %
+This makes sure SedGen can be easily maintained in the future as well as receive updates. %
+It was opted to write the different functions of SedGen into various modules thus resulting in a modular structure. %
+As long as the input and output formats cohere to the expected formats, any function can be implemented to modify the rock along its way to sediment. %
+How meaningful such operations might be, however, is totally dependent on the understanding of the function's creator. %
+
+
+\section{Python}
+Python has been developed by Guido van Rossem in 1991 to overcome problems of available programming languages at the time. %
+It has been written as a dynamic language, meaning that the user does not need to specify things such as data types, memory usage etc. . %
+Since then it has grown a large community base, resulting in popularity among various fields such as general programming, data science, web development, etc. . %
+Although, in the past Python 2 had the largest use cases, after its deprecation in 2020 Python 3 is now the way forward. %
+Therefore, SedGen was also implemented in Python 3 with a vision towards future-proofing it. %
+
+Aside from Python`s standard library of packages some additional third party packages were used, including:
+\begin{itemize}
+    \item \textit{Numpy} for linear algebra and a lot of other mathematical operations. %
+    \item \textit{Numba} to compile numpy functions before actually running SedGen, thus making Python behave as a static language resulting in significant execution time speed-ups. %
+    \item \textit{Scipy} to use mathematical distributions and various additions to Numpy's library. %
+    \item \textit{Pandas} to handle all tabular format data and handling input/output operations from/to spreadsheets. %
+    \item \textit{Matplotlib} and \textit{Seaborn} to plot and `prettify' results.
+\end{itemize}
+All of these packages are widely used throughout the scientific community, of which a nice example is their use to take the first images of a black hole (ref). %
+
+
+\section{SedGen's initialization}
+The user is expected to provide the following model properties as a necessity:
+\begin{itemize}
+    \item Modal mineralogy to specify which minerals are present in the rock as well as their volumetric proportions. %
+    \item Mean and standard deviation of the crystal size distribution, which, as discussed in section ..., is assumed to be derived from a (truncated) log-normal distribution. %
+\end{itemize}
+
+As optional properties the following may be provided during the initialization:
+\begin{itemize}
+    \item Interfacial composition to specify the texture of the parent rock. %
+    If this property is not specified, the alpha factor can be specified to determine the interfacial composition after the number frequencies of the parent rock have been calculated. %
+    In the event when the alpha factor is also not given, a default alpha factor of 1 will be used thus resulting in a random texture or a pre-specified factor for a certain rock type with a certain texture based on literature included into SedGen beforehand; (e.g., 1.05 for granite). %
+    \item Boundary conditions such as climate, including temperature and precipitation, and vegetation might be given or be chosen from a pre-specified list of options. %
+    Another possibility exists in providing an option per time step in the model, thus altering the ratio between mechanical and chemical weathering throughout the model's runtime. %
+\end{itemize}
+
+\section{Grain representation}
+SedGen makes a distinction between mono- and poly-crystalline grains. %
+The former is a grain consisting out of one crystal while the latter may consist out of two or more crystals. %
+Although a crystal might consist on sub-crystals these are not considered in SedGen. %
+
+% Figure of mono- and polycrystalline grains %
+
+The different mineral classes are assigned a number from 0 to m. %
+An array of numbers from 0 to m in SedGen thus only represents the mineral occurrences (number frequencies) but also the interfacial composition. %
+This is represented by the order of the crystals in a array in which the array represents a grain. %
+It should be noted that at the start of a SedGen initialization there is thus only one poly-crystalline `grain', the block of parent rock from which all other grains will derive. %
+As weathering kicks in, the initial array will be split into arrays of small length and when this length becomes one, a mono-crystalline grain (mcg) is formed. %
+When this happens, the mcg is transferred from the list of poly-crystalline grains (pcg) to a matrix of mcg with dimensions m x d where m is the number of mineral classes and d is the number of grain size classes. %
+The grain size representation is done in a similar way as the mineral occurene/interface array, except for the fact that d numbers are used instead of m. %
+Each number ranging from 0 to d thus represents a size/volume class. %
+
+% Figure of interface and grain size representation arrays %
+
+When intra-crystal breakage kicks in, mcg formed during inter-crystal breakage, will form. %
+To restrict numerical operations for this to happen the number of ways a mcg might be broken is limited in relation to d, i.e. the amount of discretization of the model. %
+Since a geometric series of grain size classes is used the ratio between neighbouring size classes is constant. %
+This property might be exploited to determine a dictionary of size classes that `belong together' during the initialization phase of SedGen. %
+
+% Example of search_bins and search_bins_ratio approach %
+
+
+
+\section{Weathering modules}
+    \subsection{Mechanical weathering}
+        \subsubsection{Inter-crystal breakage}
+
+        \subsubsection{Intra-crystal breakage}
+
+    \subsection{Chemical weathering}
+        \subsubsection{Chemical weathering of mcg}
+
+        \subsubsection{Chemical weathering of pcg}
+
+        \subsubsection{Clay formation}
 
 \section{Chapter contents}
 \begin{itemize}
@@ -14,20 +96,6 @@
     \item Different frameworks that are used in SedGen (e.g. Lagrangian framework, compositional space vs physical space)
     \item Discuss data that SedGen model can output and at what timesteps (GSD, mineralogy, grain number frequencies)
 
-\end{itemize}
-
-\section{Design guidelines}
-SedGen should be written in a popular programming language. %
-The code base should be easily maintainable, while also being in some sort of version control system. %
-A modular structure of the code base is also preferable. %
-
-
-\section{Programming language}
-SedGen is written in Python and uses as main packages: numpy, pandas, matplotlib, etc. . %
-All of these packages are widely used throughout the scientific community. % (ref to black hole picture?).
-\begin{itemize}
-    \item Python is easy to use
-    \item Python is low-level
 \end{itemize}
 
 
