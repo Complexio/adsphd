@@ -1,0 +1,65 @@
+% !TeX root = ../../thesis.tex
+\begin{tikzpicture}[auto matrix/.style={matrix of nodes,
+  draw,thick,inner sep=0pt,
+  nodes in empty cells,column sep=-0.2pt,row sep=-0.2pt,
+  cells={nodes={minimum width=1.9em,minimum height=1.9em,
+   draw,very thin,anchor=center,fill=white,
+   % execute at begin node={%
+   % $\vphantom{x_|}\ifnum\the\pgfmatrixcurrentrow<4
+   %   \ifnum\the\pgfmatrixcurrentcolumn<4
+   %    {#1}^{\the\pgfmatrixcurrentrow}_{\the\pgfmatrixcurrentcolumn}
+   %   \else
+   %    \ifnum\the\pgfmatrixcurrentcolumn=5
+   %     {#1}^{\the\pgfmatrixcurrentrow}_{N}
+   %    \fi
+   %   \fi
+   %  \else
+   %   \ifnum\the\pgfmatrixcurrentrow=5
+   %    \ifnum\the\pgfmatrixcurrentcolumn<4
+   %     {#1}^{T}_{\the\pgfmatrixcurrentcolumn}
+   %    \else
+   %     \ifnum\the\pgfmatrixcurrentcolumn=5
+   %      {#1}^{T}_{N}
+   %     \fi
+   %    \fi
+   %   \fi
+   %  \fi
+   %  \ifnum\the\pgfmatrixcurrentrow\the\pgfmatrixcurrentcolumn=14
+   %   \cdots
+   %  \fi
+   %  \ifnum\the\pgfmatrixcurrentrow\the\pgfmatrixcurrentcolumn=41
+   %   \vdots
+   %  \fi
+   %  \ifnum\the\pgfmatrixcurrentrow\the\pgfmatrixcurrentcolumn=44
+   %   \ddots
+   %  \fi$
+   %  }
+  }}}]
+ \matrix[auto matrix=z,xshift=3em,yshift=3em](matz){
+  0 & 0 & 0 & 0 & 0 \\
+  0 & 0 & 0 & 0 & 0 \\
+  0 & 0 & 0 & 0 & 0 \\
+  0 & 0 & 0 & $\ddots$ & $\vdots$ \\
+  0 & 0 & 0 & $\cdots$ & 0 \\
+ };
+ \matrix[auto matrix=y,xshift=1.5em,yshift=1.5em](maty){
+  0 & 0 & 0 & 0 & 0 \\
+  0 & 0 & 0 & 0 & 0 \\
+  0 & 0 & 0 & 0 & 0 \\
+  0 & 0 & 0 & $\ddots$ & $\vdots$ \\
+  0 & 0 & 0 & $\cdots$ & 0 \\
+ };
+ \matrix[auto matrix=x](matx){
+  0 & 0 & 0 & $\cdots$ & 0 \\
+  0 & 0 & 0 & $\cdots$ & 0 \\
+  0 & 0 & 0 & $\cdots$ & 0 \\
+  $\vdots$ & $\vdots$ & $\vdots$ & $\ddots$ & $\vdots$ \\
+  0 & 0 & 0 & $\cdots$ & 0 \\
+ };
+ \draw[thick,-stealth] ([xshift=1ex]matx.south east) -- ([xshift=1ex]matz.south east)
+  node[midway,below] {$C$};
+ \draw[thick,-stealth] ([yshift=-1ex]matx.south west) --
+  ([yshift=-1ex]matx.south east) node[midway,below] {size};
+ \draw[thick,-stealth] ([xshift=-1ex]matx.north west)
+   -- ([xshift=-1ex]matx.south west) node[midway,above,rotate=90] {mineral};
+\end{tikzpicture}

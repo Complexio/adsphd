@@ -16,7 +16,7 @@
 % Illustration of how to include citations \cite{Meert2011PhD} and \cite{VandenBroeck2011IJCAI}. %
 
 \section{General introduction}
-    Sediment generation is the research field in which one tries to understand how parent rock generates sediment along a specific pathway. %
+    Sediment generation is the research field which studies the processes how parent rock generates sediment along a specific pathway. %
 
     \paragraph*{}
     \textbf{Parent rock} is the rock from which the entire sediment generation process starts from. %
@@ -30,52 +30,24 @@
     \paragraph*{}
     The properties of the resulting \textbf{sediment} is also of major interest.
 
-
-\section{General remarks}
-    \begin{itemize}
-        \item In all relevant chapters parts of the SedGen model classes/functions/objects/constructs/ scripts may be included in the text or referenced as in appendix or online. %
-        \item Always note what we are and what we are not implementing into the model \(\Rightarrow\) Things can always be improved later on due to SedGen’s modularity. %
-    \end{itemize}
-
-\begin{equation}
-  \sum_{i}^{n}(\theta)
-\end{equation}
-
-\section{Chapter outline}
-    \begin{enumerate}
-        \item Introduction
-
-        \item Input
-        \begin{enumerate}
-            \item Dataset
-            \item Generalized Griffiths Descriptor (Paredis et al. 2020)
-            \item Modal mineralogy (Weltje \& Paredis 2020)
-            \item Relative interface frequencies (Weltje et al. 2018)
-            \item Crystal size distribution (Paredis et al. 2020)
-        \end{enumerate}
-
-        \item SedGen model
-        \begin{enumerate}
-            \item SedGen architecture
-            \item Mechanical weathering
-            \item Chemical weathering and clay formation
-        \end{enumerate}
-
-        \item Applications
-        \begin{enumerate}
-            \item Calibration
-            \item Post-processing + applications/test
-            \item General discussion and perspectives
-        \end{enumerate}
-
-        \item Conclusions
-    \end{enumerate}
+    \paragraph*{}
+    To this day, sediment generation remains to be fully understood, most notably in a quantitative way. %
+    That is where this PhD project comes into play, as it tries to give a first quantitative response to the long-standing questions of sediment generation. %
+    Assumptions and compromises had to be made along the way, of course, to keep the complexity of the model tangible while also limiting the requirements for running the model. %
+    Nevertheless, the value of a sediment generation cannot be underestimated, as it will serve the purpose of closing the gap in source-to-sink models. %
 
 
-\section{Parent rock characterization}
+\section{Parent rock characterization} % (Paredis et al. 2020)
     A general approach to the characterization of parent rocks should be established if one wants to be the input of a sediment generation model to be applicable to multiple input conditions. %
     Therefore, the descriptor as proposed by \cite{Griffiths_1952,Griffiths_1961} was extended to apply to parent rocks. %
-    The Generalized Griffiths Descriptor (\gls{GGD}). %
+    The Generalized Griffiths Descriptor (\gls{GGD}) is build upon five fundamental properties of a parent rock, be it:
+    \begin{itemize}
+        \item Composition
+        \item Texture
+        \item Size
+        \item Shape
+        \item Orientation
+    \end{itemize}. %
 
 
 \section{Model architecture}
@@ -168,6 +140,11 @@
 
 \section{Objectives}
 \section{Structure of this thesis}
+    \begin{itemize}
+        \item In all relevant chapters parts of the SedGen model classes/functions/objects/constructs/ scripts may be included in the text or referenced as in appendix or online. %
+        \item Always note what we are and what we are not implementing into the model \(\Rightarrow\) Things can always be improved later on due to SedGen’s modularity. %
+    \end{itemize}
+
 
 % % Some dummy code to get at least 1 entry in the nomenclature. %
 % \nomenclature{$\Theta$}{A nice symbol}

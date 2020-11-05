@@ -5,8 +5,8 @@
 % Look at Hobley et al 2017 for a good overview of how to write the backbones for this chapter
 %
 \section{Introduction}
-SedGen was written in Python, a popular, low-level, easy-to-use, programming language at the time of writing. %
-The code base has been tracked through Git with an online version available on GitHub (see link). %
+SedGen was written in Python, a popular, easy-to-use, programming language. %
+The code base has been tracked through Git as version control system (VCS) with an online version available on GitHub (see link). %
 This makes sure SedGen can be easily maintained in the future as well as receive updates. %
 It was opted to write the different functions of SedGen into various modules thus resulting in a modular structure. %
 As long as the input and output formats cohere to the expected formats, any function can be implemented to modify the rock along its way to sediment. %
@@ -22,8 +22,8 @@ Therefore, SedGen was also implemented in Python 3 with a vision towards future-
 
 Aside from Python`s standard library of packages some additional third party packages were used, including:
 \begin{itemize}
-    \item \textit{Numpy} for linear algebra and a lot of other mathematical operations. %
-    \item \textit{Numba} to compile numpy functions before actually running SedGen, thus making Python behave as a static language resulting in significant execution time speed-ups. %
+    \item \textit{Numpy} for linear algebra and mathematical operations in general. %
+    \item \textit{Numba} to compile Numpy functions before actually running SedGen, thus making Python behave as a static language resulting in significant execution time speed-ups. %
     \item \textit{Scipy} to use mathematical distributions and various additions to Numpy's library. %
     \item \textit{Pandas} to handle all tabular format data and handling input/output operations from/to spreadsheets. %
     \item \textit{Matplotlib} and \textit{Seaborn} to plot and `prettify' results.
@@ -35,7 +35,7 @@ All of these packages are widely used throughout the scientific community, of wh
 The user is expected to provide the following model properties as a necessity:
 \begin{itemize}
     \item Modal mineralogy to specify which minerals are present in the rock as well as their volumetric proportions. %
-    \item Mean and standard deviation of the crystal size distribution, which, as discussed in section ..., is assumed to be derived from a (truncated) log-normal distribution. %
+    \item Mean and standard deviation of each mineral`s crystal size distribution, which, as discussed in section ..., is assumed to be derived from a (truncated) log-normal distribution. %
 \end{itemize}
 
 As optional properties the following may be provided during the initialization:
@@ -43,29 +43,99 @@ As optional properties the following may be provided during the initialization:
     \item Interfacial composition to specify the texture of the parent rock. %
     If this property is not specified, the alpha factor can be specified to determine the interfacial composition after the number frequencies of the parent rock have been calculated. %
     In the event when the alpha factor is also not given, a default alpha factor of 1 will be used thus resulting in a random texture or a pre-specified factor for a certain rock type with a certain texture based on literature included into SedGen beforehand; (e.g., 1.05 for granite). %
+    \item Parent rock volume to specify the initial volume of rock to be weathered.
+    By default this is set to \(1\ m^{3}\) of parent rock.
     \item Boundary conditions such as climate, including temperature and precipitation, and vegetation might be given or be chosen from a pre-specified list of options. %
     Another possibility exists in providing an option per time step in the model, thus altering the ratio between mechanical and chemical weathering throughout the model's runtime. %
 \end{itemize}
 
+These initial parameters are then passed to a constructor instance of the SedGen class. %
+The initialization of an instance takes about 10 s (for 10 million crystals initially). %
+After assigning the initial parameters as attributes of the instance, new attributes are calculated based on them. %
+Firstly the binning occurs, in which the crystal sizes are discretizized for computational benefits. %
+Secondly, the mineral occurrences are simulated based on the modal mineralogy and the crystal-size distribution data. %
+    This is performed in a separate function in which the parent rock volume is filled up with crystals until it is filled. %
+    This is done per mineral class by taking the product of the modal mineralogy and parent rock volume as the mineral class' volume. %
+    By initializing a log-normal distribution based on the csd mean and std, crystal sizes might be generated from it.
+    A `learning-rate' parameter is passed to the function to determine how many crystals are requested from the log-normal distribution during every iteration of the while loop. %
+    The while loop continues until the sum of the volume of generated crystals reaches the mineral class' volume. %
+    By tweaking the learning rate the resulting simulated mineral class' volume might better approximate the true mineral class' volume. %
+    Once the required volume has been filled, the array of generated crystal volumes is binned according to the already initialized volume bin array. %
+
+At this point, the crystal size/volume array has been initialized. %
+The number of crystals per mineral class is also known at this point. %
+These numbers might be used later on to request new material to be generated to enter the model at a later timestep. %
+This generation of material can then occur without the need of filling up a volume via a learning-curve but might be performed by just requesting N crystals from the log-normal crystal size distribution. %
+
+
+
+\section{Binning}
+Since SedGen was developed for use on personal computers, trade-offs between accuracy and performance had to be made. %
+One such trade-off is the use of bins to represent crystal sizes. %
+By default, the model works with 1500 crystal size classes in a geometric series of \(2^{-10}\) to \(2^{5}\). %
+This translates to a minimal crystal size of ca. 1 µm and a maximal crystal size of 30 mm. %
+
+In most of the model's functions, however, volume classes are used for calculations. %
+This is done to establish a `volume-balance' cfr. mass-balance practices. %
+The size bins are converted to volume bins under the assumption that all crystal are spheres. %
+Hence:
+    \begin{equation}
+        bins_{V} = \frac{3}{4} \pi\ bins_{S}^{3}
+    \end{equation}
+The bins are represented by bin labels ranging from 0 up to 1500 in the default case. %
+For ease of use, the median of each bin is used during calculations. %
+    \begin{equation}
+        bins_{S, med} = median(bins_{S})
+    \end{equation}
+    \begin{equation}
+        bins_{V, med} = median(bins_{V})
+    \end{equation}
+% Explain search_bins and ratio_search_bins here?
+
+
+\section{Crystals}
+The base unit of the model is the crystal which represents a single entity of a mineral class. %
+Its boundaries thus lie in the crystallographic characteristics of the mineral class to which it belongs. %
+A distinction between so-called sub-crystals is not made within the model even though crystals may split in two during intra-crystal breakage. %
+If such a splitting happens the crystal (or mono-crystalline grain at this point) is merely assigned to two new crystals of the same mineral class, be it of a smaller size/volume of course. %
+A mineral class can represent one mineral or several ones, e.g. for accessory minerals, within the parent rock that is being studied. %
+This should be borne in mind when certain physical or chemical properties are set for these `combined mineral classes'. %
+
+
+
 \section{Grain representation}
 SedGen makes a distinction between mono- and poly-crystalline grains. %
 The former is a grain consisting out of one crystal while the latter may consist out of two or more crystals. %
-Although a crystal might consist on sub-crystals these are not considered in SedGen. %
+Although a crystal might consist of sub-crystals these are not considered in SedGen. %
+
+The poly-crystalline grains are represented by a list of arrays in which each array represents one pcg.
+\begin{equation}
+    pcgs = [pcg_1, pcg_2, \ldots, pcg_p]
+\end{equation}
+The mono-crystalline grains are represented by a n x m x d matrix in which the values represent the number of mcgs (of a specific chemical weathering state, mineral class and size) present in the model. %
+
+\begin{figure}
+    \centering
+    \input{chapters/10-sedgen_architecture/mcg_matrix.tikz}
+    \caption{Representation of empty mcg 3D matrix}
+    \label{fig:mcg_matrix}
+\end{figure}
+
 
 % Figure of mono- and polycrystalline grains %
 
-The different mineral classes are assigned a number from 0 to m. %
-An array of numbers from 0 to m in SedGen thus only represents the mineral occurrences (number frequencies) but also the interfacial composition. %
-This is represented by the order of the crystals in a array in which the array represents a grain. %
+The different mineral classes are assigned a number from 0 to m, with m being the total number of mineral classes. %
+An array of numbers from 0 to m in SedGen not only represents the mineral occurrences (number frequencies) but also the interfacial composition. %
+The interfacial composition is represented by the order of the crystals in an array in which the array represents one poly-crystalline grain. %
 It should be noted that at the start of a SedGen initialization there is thus only one poly-crystalline `grain', the block of parent rock from which all other grains will derive. %
-As weathering kicks in, the initial array will be split into arrays of small length and when this length becomes one, a mono-crystalline grain (mcg) is formed. %
-When this happens, the mcg is transferred from the list of poly-crystalline grains (pcg) to a matrix of mcg with dimensions m x d where m is the number of mineral classes and d is the number of grain size classes. %
-The grain size representation is done in a similar way as the mineral occurene/interface array, except for the fact that d numbers are used instead of m. %
+As weathering kicks in, the initial array will be split into arrays of smaller length and when this length becomes one, a mono-crystalline grain (mcg) is formed. %
+When this happens, the mcg is transferred from the list of poly-crystalline grains (pcg) to a matrix of mcg with dimensions m x d where d is the number of grain size classes. %
+The grain size representation is done in a similar way as the mineral occurrence/interface array, except for the fact that d numbers are used instead of m. %
 Each number ranging from 0 to d thus represents a size/volume class. %
 
 % Figure of interface and grain size representation arrays %
 
-When intra-crystal breakage kicks in, mcg formed during inter-crystal breakage, will form. %
+When intra-crystal breakage kicks in, mcg formed during inter-crystal breakage, will break. %
 To restrict numerical operations for this to happen the number of ways a mcg might be broken is limited in relation to d, i.e. the amount of discretization of the model. %
 Since a geometric series of grain size classes is used the ratio between neighbouring size classes is constant. %
 This property might be exploited to determine a dictionary of size classes that `belong together' during the initialization phase of SedGen. %
@@ -75,15 +145,41 @@ This property might be exploited to determine a dictionary of size classes that 
 
 
 \section{Weathering modules}
+    A distinction has to be made between mechanical and chemical weathering as to how they interact on the building blocks of the model.
+    Mechanical weathering will operate on the interfaces of grains, or in the case of intra-crystal breakage of mcg, on its virtual interfaces. %
+    In the case of inter-crystal breakage, upon breakage along an interface, this interface is thus destroyed and removed from the model`s interface counts matrix. %
+
+    Chemical weathering will operate on the crystals themselves and this may result in two cases depending on the crystal`s size and chemical weathering state.
+    \begin{enumerate}
+        \item When a crystal is chemically weathered and its size is still bigger than its chemical weathering state`s residue threshold, it is kept in-place and only residue is formed due to weathering process.
+        \item When a crystal is chemically weathered and its size is smaller than its chemical weathering state`s residue threshold, the crystal as a whole is dissolved and thus added to residue (of the corresponding mineral class). %
+    \end{enumerate}
     \subsection{Mechanical weathering}
         \subsubsection{Inter-crystal breakage}
 
         \subsubsection{Intra-crystal breakage}
 
     \subsection{Chemical weathering}
+    To accommodate the arithmetic nature of chemical weathering, a new approach to the binning was added since the binning consists of a geometric series. %
+    By using multiple arrays of bins with each array representing the initial geometric series of bins minus x times the chemical weathering, a new trade-off between accuracy and performance is obtained. %
+    This operation results in the expansion of multiple matrices from 2D to 3D with the dimensions being n x m x d, where n is the number of iterations the model has gone through. %
+    As chemical weathering occurs once every time step, n immediately reflects the number of times chemical weathering has occurred on a certain grain. %
+    By thus shifting the grains to higher n arrays, chemical weathering is simulated. %
+    By requesting the corresponding bin array, the exact bin values for a specific chemical weathered grain may be retrieved. %
+
+
         \subsubsection{Chemical weathering of mcg}
+        % Weathering
+        % Formation of residue due to dissolution of mcg
+        % Formation of residue due to weathering
 
         \subsubsection{Chemical weathering of pcg}
+        % Weathering
+        % Formation of mcg due to dissolution of all but one grain in a pcg
+        % Recalculation of interfaces
+
+        % Formation of residue due to dissolution of pcg
+        % Formation of residue due to weathering
 
         \subsubsection{Clay formation}
 
