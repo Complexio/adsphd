@@ -8,7 +8,58 @@
 
 \end{itemize}
 
+\section{Future updates to SedGen}
+    \subsection{Fundamental property of shape}
+    Since SedGen rather makes use of a `crystal volume distribution' (cvd) than the csd, this may be used to our benefit for including the fourth fundamental property of shape. %
+    Together with a crystal's size, its shape also determines its volume after all. %
+    Volume can thus be considered as a derived property of the fundamental properties of size and shape. %
+    Although the cvd will give information about the absolute occurences of volumes of a mineral class, relative proportions of mineral classes in unit volume of a rock still need to be provided by the modal mineralogy, i.e., the composition fundamental property. %
 
+    Some remarks to this:
+        - Volume is also dependent on a mineral's density
+        - What's the influence of modal mineralogy and interfacial composition on the cvd?
+
+    Since the assumption of all crystals inside SedGen being spheres eliminates the fundamental property of shape, some extra functionality to SedGen would have to be added to incorporate it. %
+    This can be easily done however by adding an additional list of arrays for the pcg, indicating in a qualitative way to which shape a crystal belongs. %
+    As with the mineral occurence array, `0' could stand for a spherical shape, `1' for a cubic shape and so on. %
+    For the mcg, an additional dimension to the currently 3D array would have to be added to keep track of the shape property in the same qualitative way as described above. %
+    When operations are done on crystals, be it from the pcg or mcg part, the shape indicator could act as a lookup value to activate corresponding formulas for calculating volumes, sizes etc. %
+    Rules for how shapes might change when a mcg is broken, will also have to be established. %
+    The way crystal shapes might occur due to breakage might be characterized in a similar way as with crystal interfaces. %
+    With a proportions 3D array the outcomes per mineral class might be provided:
+            SS    PP    SP    etc.
+    Q   S   0.25  0.2   0.3
+        C   0.1   0.6   0.1
+        P   0.05  0.2   0.3
+    P   ...
+
+    Where Q and P stand for quartz and plagioclase and S, C, P stand for spherical, cubic and plate-like (i.e. planar). %
+
+    For the pcgs, the consideration might be made to also keep track of the shape of an individual pcg, as this might be of interest to some people. %
+
+    Although it is still quite a challenge to measure the shapes of crystals contained within a rock, it is not impossible. %
+    Nevertheless, an estimation or variation of shapes based on the mineral class might prove sufficient as input to SedGen or such estimations can build into the model beforehand. %
+
+    \subsection{Texture representation in 2D/3D}
+    Currently, the texture representation in SedGen is done in a one-dimensional manner. %
+    Crystals in pcgs are represented by one-dimensional arrays in which their order also dictates the texture. %
+    Each crystal can thus only have two contacts at most and one at the least. %
+    If a crystal has no contacts, it is by definition a mono-crystalline grain as should have been moved from the pcg part to the mcg one. %
+
+
+    \subsection{Fundamental property of orientation}
+    The fundamental property of orientation would only enter the picture once the shape fundamental property has been successfully incorporated into the SedGen model. %
+    This is true, since as long as all crystals would be spheres, orientation of crystals would not have a meaning. %
+    That is, as long as sub-crystals are not being considered, which is the case at the moment. %
+    Even when the shape property would have been incorporated, an upgrade of the texture representation in 1D to 2D or even to 3D would truly make the orientation property's importance to come to the foreground. %
+
+    \subsection{Integration of time}
+    The time aspect of SedGen is quite abstract at the moment. %
+    In the future, an integration of time into the model might enable a better understanding of the processed and conditions present during a SedGen model. %
+    One such way of integrating this, might be by enable a `flushing rate' in the model. %
+    This rate would define how much water is moving through the system in a certain time step (iteration of the model). %
+    By specifying this, the time steps could also be attributed a true time duration. %
+    Most prominently, the flushing rate would determine the balance between mechanical and chemical weathering. %
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
