@@ -1,4 +1,7 @@
 % !TeX root = ../../thesis.tex
+
+% https://tex.stackexchange.com/questions/516073/how-to-draw-3d-matrix-using-tikz
+
 \begin{tikzpicture}[auto matrix/.style={matrix of nodes,
   draw,thick,inner sep=0pt,
   nodes in empty cells,column sep=-0.2pt,row sep=-0.2pt,

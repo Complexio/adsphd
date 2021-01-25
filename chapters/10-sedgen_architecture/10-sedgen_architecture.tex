@@ -44,13 +44,13 @@ As optional properties the following may be provided during the initialization:
     If this property is not specified, the alpha factor can be specified to determine the interfacial composition after the number frequencies of the parent rock have been calculated. %
     In the event when the alpha factor is also not given, a default alpha factor of 1 will be used thus resulting in a random texture or a pre-specified factor for a certain rock type with a certain texture based on literature included into SedGen beforehand; (e.g., 1.05 for granite). %
     \item Parent rock volume to specify the initial volume of rock to be weathered.
-    By default this is set to \(1\ m^{3}\) of parent rock.
+    By default this is set to \SI{1}{\cubic\metre} of parent rock.
     \item Boundary conditions such as climate, including temperature and precipitation, and vegetation might be given or be chosen from a pre-specified list of options. %
     Another possibility exists in providing an option per time step in the model, thus altering the ratio between mechanical and chemical weathering throughout the model's runtime. %
 \end{itemize}
 
 These initial parameters are then passed to a constructor instance of the SedGen class. %
-The initialization of an instance takes about 10 s (for 10 million crystals initially). %
+The initialization of an instance takes about \SI{10}{\second} (for 10 million crystals initially). %
 After assigning the initial parameters as attributes of the instance, new attributes are calculated based on them. %
 Firstly the binning occurs, in which the crystal sizes are discretizized for computational benefits. %
 Secondly, the mineral occurrences are simulated based on the modal mineralogy and the crystal-size distribution data. %
@@ -72,13 +72,13 @@ This generation of material can then occur without the need of filling up a volu
 \section{Binning}
 Since SedGen was developed for use on personal computers, trade-offs between accuracy and performance had to be made. %
 One such trade-off is the use of bins to represent crystal sizes. %
-By default, the model works with 1500 crystal size classes in a geometric series of \(2^{-10}\) to \(2^{5}\). %
-This translates to a minimal crystal size of ca. 1 µm and a maximal crystal size of 30 mm. %
+By default, the model works with 1500 crystal size classes in a geometric series of \SIrange[parse-numbers=false]{2^{-10}}{2^{5}}{\milli\metre}. %\(2^{-10}\) to \(2^{5}\). %
+This translates to a minimal crystal size of \ca \SI{1}{\micro\metre} and a maximal crystal size of \SI{30}{\milli\metre}. %
 
 In most of the model's functions, however, volume classes are used for calculations. %
 This is done to establish a `volume-balance' cfr. mass-balance practices. %
 The size bins are converted to volume bins under the assumption that all crystal are spheres. %
-Hence:
+Hence: %
     \begin{equation}
         bins_{V} = \frac{4}{3} \pi\ bins_{S}^{3}
     \end{equation}
