@@ -16,31 +16,43 @@
 % Illustration of how to include citations \cite{Meert2011PhD} and \cite{VandenBroeck2011IJCAI}. %
 
 \section{General introduction}
-    Sediment generation is the research field which studies the processes how parent rock generates sediment along a specific pathway. %
+    Sediment generation is the research field which studies the processes of how parent rock generates sediment along a specific pathway. %
 
     \paragraph*{}
     \textbf{Parent rock} is the rock from which the entire sediment generation process starts from. %
-    The properties of such a parent rock already limit the possible outcomes of the final sediment. %
+    The properties of such a parent rock already confine the possible outcomes of the final sediment. %
     Therefore, a proper way of characterizing the parent rock and thus its properties should be applied. %
 
     \paragraph*{}
-    The \textbf{pathway} looks at by which processes sediment generation occurs, and along with it to which degree each process effects the outcome. %
+    The \textbf{pathway} looks at by which processes sediment generation occurs, and along with it to which degree each process affects the outcome. %
     Mechanical and chemical weathering are the major two groups with regard to the outlook of a pathway. %
 
     \paragraph*{}
-    The properties of the resulting \textbf{sediment} is also of major interest.
+    The properties of the resulting \textbf{sediment} is also of major interest as it will define its usefulness towards certain applications. %
+    Such applications for the sediment can be found in oil and gas exploration, geothermal energy, \(CO_2\) capture and storage etc. %
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=7cm]{chapters/01-introduction/figures/Source_to_sink.pdf}
+        \caption[Source to sink representation]{Source to sink representation with possible pathways indicated as lines and intermediate sinks as circles. %
+        Sediment generation models studying the way from source to sink, whilst provenance analysis does the opposite. %
+        At the sink, basin filling modelling takes place. %
+        All models combined will form source-to-sink modelling. %
+        Modified from \textcite{Allen_2008}}
+        \label{fig:source_to_sink}
+    \end{figure}
 
     \paragraph*{}
     To this day, sediment generation remains to be fully understood, most notably in a quantitative way. %
-    That is where this PhD project comes into play, as it tries to give a first quantitative response to the long-standing questions of sediment generation. %
+    That is where this PhD project comes into play, as it gives a first quantitative response to the long-standing questions of sediment generation. %
     Assumptions and compromises had to be made along the way, of course, to keep the complexity of the model tangible while also limiting the requirements for running the model. %
-    Nevertheless, the value of a sediment generation cannot be underestimated, as it will serve the purpose of closing the gap in source-to-sink models. %
+    Nevertheless, the value of a sediment generation model cannot be underestimated, as it will serve the purpose of closing the gap in source-to-sink models. %
 
 
 \section{Parent rock characterization} % (Paredis et al. 2020)
-    A general approach to the characterization of parent rocks should be established if one wants to be the input of a sediment generation model to be applicable to multiple input conditions. %
+    A general approach to the characterization of parent rocks should be established if one wants a sediment generation model to be applicable to multiple input conditions. %
     Therefore, the descriptor as proposed by \cite{Griffiths_1952,Griffiths_1961} was extended to apply to parent rocks. %
-    The Generalized Griffiths Descriptor (\gls{GGD}) is build upon five fundamental properties of a parent rock, be it:
+    The Generalized Griffiths Descriptor (\gls{GGD}) is designed with the five fundamental properties of a parent rock in mind, be it:
     \begin{itemize}
         \item Composition
         \item Texture
@@ -50,7 +62,7 @@
     \end{itemize}. %
 
 
-\section{Model architecture}
+\section{SedGen model}
     \subsection{Main}
     The main code block runs the entire model. %
     It can access all the global parameters and functions. %
@@ -137,8 +149,8 @@
     \subsection{Post-processing}
     Output data may be post-processed to generate time-evolution figures such as trajectories on ternary diagrams e.g. %
 
-
 \section{Objectives}
+
 \section{Structure of this thesis}
     \begin{itemize}
         \item In all relevant chapters parts of the SedGen model classes/functions/objects/constructs/ scripts may be included in the text or referenced as in appendix or online. %
@@ -160,7 +172,7 @@
 %   \centering
 %   \medskip
 %   \includegraphics[width=. %
-%   \textwidth]{sine}
+%   \textwidth]{sine} %/linewidth might be better option
 %   \caption[Short caption for Table of Figures]{Illustration of how to
 %   include a figure (long text, should not go to Table of Figures).} %
 %   }

@@ -1,4 +1,4 @@
-\documentclass[showinstructions, faculty=fw,department=aow,phddegree=glo]{adsphd} %add final to arguments to obtain final version
+\documentclass[showinstructions, tothejury, faculty=fw,department=aow,phddegree=glo]{adsphd} %add final to arguments to obtain final version
 %\documentclass[showinstructions,showlabels,coverfontpercent=100,faculty=fw,department=aow,phddegree=glo]{adsphd}
 %\documentclass[croppedpdf,showinstructions,faculty=fw,department=aow,phddegree=glo]{adsphd}
 %\documentclass[online,faculty=fw,department=aow,phddegree=glo]{adsphd}
@@ -114,20 +114,28 @@
 % Fonts
 % \usepackage[scaled]{helvet}
 % \renewcommand\familydefault{\sfdefault}
+% \usepackage{libertine} % enable to obtain same font as Bloemsma
+% \usepackage{libertinust1math} % enable to obtain same font as Bloemsma
 \usepackage[T1]{fontenc}
 %Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
 \usepackage[Sonny]{fncychap}
 \ChTitleVar{\Large\centering\sf}
 \ChNumVar{\large\sf\bfseries}
 \ChNameVar{\large\sf}
+\usepackage{siunitx}
 \usepackage{textcomp} % nice greek alphabet
 \usepackage{pifont}   % Dingbats
 \usepackage{booktabs} % Needed for professional looking tables
 \usepackage{amssymb,amsthm}
 \usepackage{amsmath}
 \usepackage[]{threeparttable} % Create tables with footnotes
-\usepackage{caption} % Set spacing between figure/table and its caption
+\usepackage{adjustbox} % Adjust tables to pagewidth
+\usepackage{makecell} % Create multiline cells in tables
+\usepackage[displaymath, mathlines]{lineno} % Display line numbers
+\linenumbers
+\usepackage[font=footnotesize, labelfont=bf]{caption} % Set spacing between figure/table and its caption
 \captionsetup[table]{skip=10pt}
+\usepackage[bottom]{footmisc} %Lock position of footnotes at bottom of page
 % Set spacing between sentences to exaclty one space instead of Latex’s ``rubber spacing''
 % \frenchspacing
 
@@ -138,6 +146,14 @@
 \addto\extrasenglish{\def\ca{ca.\@ }}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Enable in order for line numbering to be done correctly around math environments
+\let\oldequation\equation
+\let\oldendequation\endequation
+
+\renewenvironment{equation}
+  {\linenomathNonumbers\oldequation}
+  {\oldendequation\endlinenomath}
 
 \begin{document}
 
