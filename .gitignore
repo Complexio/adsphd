@@ -7,6 +7,7 @@ thesis.aux
 thesis.bbl
 thesis.blg
 thesis.dvi
+thesis.fls
 thesis.lof
 thesis.log
 thesis.lot
@@ -27,6 +28,7 @@ thesis.idx
 thesis.ind
 thesis.run.xml
 thesis.synctex.gz
+thesis.fdb_latexmk
 thesis.ps
 cover.*
 s
@@ -34,4 +36,5 @@ s
 *.bbl
 *.blg
 *.tgz
+*.bib.bak
 VERSION
