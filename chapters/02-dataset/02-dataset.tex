@@ -1,32 +1,65 @@
 % !TeX root = ../../thesis.tex
-\chapter{Dataset}\label{ch:dataset}
+\chapter{Datasets}\label{ch:datasets}
 
-\section{Chapter contents}
-\begin{itemize}
-    \item Introduction to main data set of Heins (1992): Geological setting of different plutons, number and identity of samples, etc. . %
-    \item Introduction to three main ‘building blocks’ of modal mineralogy, relative crystal interfaces and CSD
-\end{itemize}
 
-\section{Data from literature}
+\section{Introduction}
+For the model to be put to use, data has to be provided. %
+This data can be gathered from legacy datasets, newly acquired or be a combination of both. %
+Suggested ways and formats for data to be collected in will be discussed in later chapters. %
+The main dataset used in this research will be discussed in this chapter alongside with some additional datasets. %
+As this dataset missed some data required for the model, the efforts made to collect this complementary data will also be established. %
+
+
+\section{Legacy data}
     \subsection{Data from Heins (1992)}
     The PhD thesis of \Textcite{Heins_1992} was the main source for data of this project. %
     Since it holds detailed data on the mineralogical composition and texture of six granitoid plutons it was very suited to serve as the starting point for this PhD. %
     Later on, the available data would be extended by means of own data collection (see next section). %
 
         \subsubsection{Granitoid plutons}
-        Six plutons were sampled by \Textcite{Heins_1992} which resulted in \ca 50 thin sections of parent rock and \ca 150 sediment samples across three size fractions (see Table \ref{tab:n_samples_Heins}). %
+        Six granitoid plutons were sampled by \Textcite{Heins_1992} which resulted in \ca 50 thin sections of parent rock and \ca 150 sediment samples across three size fractions (see Table \ref{tab:plutons_general_Heins}). %
+        Five of the six plutons are situated in the US: Arizona (AZ), California (CA-NS for northern and southern drainage basins and CA-EW for eastern and western drainage basins), Montana (MT), Washington (WA). %
+        The sixth pluton is located in Guerrero (GR), Mexico. %
 
             \input{chapters/02-dataset/tables/table_2.1}
 
     \subsection{Additional data sources}
     Throughout the PhD, other sources for data of various forms have also been used. %
-    One worth noting here is the \Textcite{Vistelius_et_al_1983} which was used for both the spatial variability of modal mineralogy and textural information studies. %
     References to those may be found in the relevant chapters. %
+    One worth noting here is the \Textcite{Vistelius_et_al_1983} which was used for both the spatial variability of modal mineralogy and textural information studies. %
 
-\section{Own data}
+
+\section{New data}
 Additional data was gathered to elaborate the dataset already collected by \Textcite{Heins_1992}. %
 The main addition was the digital image analysis carried out over a period of four months. %
 During this analysis, data on crystal size was collected of all available thin sections from \Textcite{Heins_1992}. %
+
+    \subsection{Digital image analysis}
+    The only information on the CSPDs of minerals in the parent rocks (property 3) is given by the arithmetic averages of the lengths of crystal intercepts (1-D apparent diameter) obtained from the parent-rock interface tallies of \Textcite{Heins_1992}. %
+    Therefore, the original thin sections of the parent rocks were revisited to estimate crystal-size distributions of the minerals in each pluton. %
+    The thin sections were digitized by taking \ca 200 pictures per thin section in circularly polarized light (CPL) \Textcite{Higgins_2010}. %
+    The pictures were stitched together using the software package PTGui. %
+    CPL is very useful for the purpose of tracing crystal boundaries. %
+    It highlights texture because all crystals will show their maximum birefringence colour for their respective cross-section independently of their orientation with regard to the polarizers. %
+    This allows identification of the majority of crystals from the images without the need for a microscope. %
+    Flatbed scan images of the thin sections in plane- and cross-polarized light were used for verification purposes throughout the process. %
+
+    The following was carried out for each of the six mineral classes in each of the thin sections: A predetermined number of crystals (25, 50 or 100) was randomly selected in Adobe Photoshop. %
+    Random selection consists of assigning a uniform probability distribution to all points falling within the limits of the digitized specimen (rectangular thin section). %
+    A crystal is selected if the pair of random coordinates (generated from a uniform distribution) falls within its limits, and the crystal falls entirely within the bounds of the specimen. %
+    Crystals larger than \SI{25}{\micro\metre} could be reliably identified. %
+    By using the ‘quick selection tool’ in Photoshop the crystals were converted to paths in vector format and given a corresponding mineral-class colour. %
+    All in all, about 14,000 crystals were digitized. %
+    The images were exported and loaded into the JMicrovision software for segmentation and data acquisition of 16 features including length, width, area, perimeter, and equivalent circular diameter. %
+    The equivalent circular diameter (D2) was chosen as the feature for further data analysis, in accordance with the assumption that crystals are spherical. %
+    The distributions of equivalent circular diameter (D2) were subsequently converted to 3-D and fused with the 1-D intercept data of Heins (1992) under the assumption of a lognormal frequency distribution of crystal size. %
+    The lower limit on crystal size in the data of Heins (1992) is \SI{10}{\micro\metre}. %
+    The upper limit on crystal size is given by the smallest dimension of the rectangular specimens, i.e., \ca \SI{25}{\milli\metre}. %
+    The stereological method used to estimate the crystal-size distributions is discussed in detail in Appendix A.
+
+    Unfortunately, the data set of the sediments does not include measurements of property 3, so we cannot compare directly CSPDs of parent rocks and sediments. %
+    We will, therefore, limit ourselves to presenting the two parameters of the best-fit lognormal distributions (mean and standard deviation) of each mineral in each of the thin sections of the parent rocks separately, as well as the average values for the minerals in each pluton. %
+    All distributions will be compared against the observations by means of four statistical goodness-of-fit tests: Anderson-Darling, Pearson's Chi-squared, Kolmogorov-Smirnov, and Shapiro-Wilk (e.g., Stephens, 1974; Davis, 2002 and references therein).
 
 
 
