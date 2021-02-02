@@ -3,7 +3,8 @@ ADS PhD LaTeX template
 
 *This template is the result of an ongoing group effort by a number of
 volunteers. Help your fellow PhD researcher
-in the Issues section and contribute updates if you can.*
+in the Issues section and contribute updates if you can. If you are fluent
+in TeX and can help monitoring this repository, ask Wannes Meert for admin rights.*
 
 If you want to share tips, tricks, updates, questions or problems: add them
 as a [GitHub issue](https://github.com/wannesm/adsphd/issues) or a [GitHub pull request](https://help.github.com/articles/using-pull-requests).
@@ -130,6 +131,7 @@ Options for the adsphd class
                               [fw]   Faculty of Science
                               [fa]   Faculty of Architecture
                               [fiiw] Faculty of Engineering Technology
+			      [hiw]  Institute of Philosophy
 
     department            : department
                               [aow] Department of Earth and Environmental Sciences
@@ -142,10 +144,15 @@ Options for the adsphd class
                               [cws] Department of Computer Science
                               [elt] Department of Electrical Engineering
                               [mtk] Department of Materials Engineering
-                              [m2s] Department of Microbial and Molecular Systems
+                              [mms] Department of Microbial and Molecular Systems
                               [nat] Department of Physics and Astronomy
                               [wtk] Department of Mechanical Engineering
                               [wis] Department of Mathematics
+                              [cespp]   Centre for Ethics, Social and Political Philosophy
+                              [clps]    Centre for Logic and Philosophy of Science
+                              [cmprpc]  Centre for Metaphysics, Philosophy of Religion and Philosophy of Culture
+                              [dwmc]    De Wulf-Mansion Centre for Ancient, Medieaval and Renaissance Philosophy
+                              [hua]     Husserl-Archives: Centre for Phenomenology and Continental Philosophy
 
     phddegree             : official PhD degree on diploma (only for the
                             faculties of Engineering Science and Science)
@@ -348,5 +355,8 @@ Tassos Natsakis,
 Till Nagel,
 Job Noormal,
 Jesper Cockx,
+Laurens Sion,
+Felipe Morales,
+Pieter Maene,
 Roel Van Beeumen.
 
